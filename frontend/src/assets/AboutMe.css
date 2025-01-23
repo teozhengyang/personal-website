@@ -1,0 +1,12 @@
+#about-me {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-me-text {
+    font-size: 17px;;
+    margin-top: 1em;
+    line-height: 2;
+}
