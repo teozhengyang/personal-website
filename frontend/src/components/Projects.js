@@ -1,34 +1,17 @@
 import React from 'react';
 import { Box, Typography, Grid2, Card, CardMedia, CardContent, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import tictactoe from '../assets/tictactoe.png';
-import connect4 from '../assets/connect4.png';
+import games from '../assets/games.jpg';
 import header from '../assets/header.jpg';
 import calculator from '../assets/calculator.jpg';
 import chatbot from '../assets/chatbot.jpg';
-import docker from '../assets/docker.png';
-import timetabros from '../assets/timetabros.png';
+import docker_aws from '../assets/docker_aws.jpg';
+import schedule from '../assets/schedule.png';
 import eventify from '../assets/eventify.jpg';
+import calcifer from '../assets/calcifer.jpg';
 
 const projects = [
-  {
-    title: 'Tic Tac Toe Game',
-    description: 'A classic game of Tic Tac Toe built with JavaScript for a fun and interactive experience.',
-    image: tictactoe,
-    github: 'https://github.com/teozhengyang/tic_tac_toe',
-  },
-  {
-    title: 'Connect Four Game',
-    description: 'A classic game of Connect Four built with JavaScript for a fun and interactive experience.',
-    image: connect4,
-    github: 'https://github.com/teozhengyang/connect4',
-  },
-  {
-    title: 'Personal Portfolio Website',
-    description: 'A portfolio website built using React.js to showcase my work and skills.',
-    image: header,
-    github: 'https://github.com/teozhengyang/personal-website',
-  },
+  
   {
     title: 'Calculator',
     description: 'A simple calculator app built with JavaFX for basic arithmetic operations.',
@@ -44,14 +27,8 @@ const projects = [
   {
     title: 'Docker and AWS',
     description: 'A simple Python script to deploy a Docker container on AWS EC2 instance.',
-    image: docker,
+    image: docker_aws,
     github: 'https://github.com/teozhengyang/docker_aws',
-  },
-  {
-    title: 'Scheduling App',
-    description: 'An event scheduling app built with JavaFX to help students plan their timetable.',
-    image: timetabros,
-    github: 'https://github.com/teozhengyang/tp',
   },
   {
     title: 'Event Planning App',
@@ -59,6 +36,30 @@ const projects = [
     image: eventify,
     github: 'https://github.com/teozhengyang/eventify',
   },
+  {
+    title: 'Games',
+    description: 'A compilation of classic games created using JavaScript that can be played at the command line.',
+    image: games,
+    github: 'https://github.com/teozhengyang/games',
+  },
+  {
+    title: 'Personal Portfolio Website',
+    description: 'A portfolio website built using React.js to showcase my work and skills.',
+    image: header,
+    github: 'https://github.com/teozhengyang/personal-website',
+  },
+  {
+    title: 'Scheduling App',
+    description: 'An event scheduling app built with JavaFX to help students plan their timetable.',
+    image: schedule,
+    github: 'https://github.com/teozhengyang/tp',
+  },
+  {
+    title: 'Others',
+    description: 'More projects can be found on my GitHub profile. Feel free to check them out!',
+    image: calcifer,
+    github: 'http://github.com/teozhengyang/'
+  }
 ];
 
 const Projects = () => {

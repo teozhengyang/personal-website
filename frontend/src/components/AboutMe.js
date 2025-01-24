@@ -22,7 +22,7 @@ const AboutMe = () => {
 
       <br />
 
-      <p id='about-me-tech'>
+      <p class='about-me-text'>
         Languages: CSS, HTML, Java, JavaScript, Python, Solidity, SQL, TypeScript 
         <br />
         Frameworks: Django, Flask, React.js
