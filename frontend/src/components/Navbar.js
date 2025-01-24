@@ -35,7 +35,7 @@ const Navbar = () => {
                 color: 'white',
                 backgroundColor: '#242424'
               },
-              marginRight: 2,
+
             }}
           >
             About Me
@@ -48,7 +48,7 @@ const Navbar = () => {
                 color: 'white',
                 backgroundColor: '#232323',
               },
-              marginRight: 2,
+
             }}
           >
             Experience
@@ -61,7 +61,7 @@ const Navbar = () => {
                 color: 'white',
                 backgroundColor: '#232323'
               },
-              marginRight: 2,
+
             }}
           >
             Projects
@@ -74,7 +74,7 @@ const Navbar = () => {
                 color: 'white',
                 backgroundColor: '#232323'
               },
-              marginRight: 2,
+
             }}
           >
             Blog
