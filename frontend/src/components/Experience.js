@@ -79,6 +79,9 @@ const Education = () => (
         <Typography variant="h6">Exchange</Typography>
         <Typography variant="body2">The Chinese University of Hong Kong</Typography>
         <Typography variant="body2">2024</Typography>
+        <Typography variant="body2" sx={{ marginTop: 1 }}>
+          Modules taken: Artificial Intelligence, Blockchain Technologies, Operating Systems
+        </Typography>
       </TimelineContent>
     </TimelineItem>
 
@@ -92,7 +95,7 @@ const Education = () => (
         <Typography variant="body2">Nanyang Junior College</Typography>
         <Typography variant="body2">2018 - 2019</Typography>
         <Typography variant="body2" sx={{ marginTop: 1 }}>
-          Graduated with a perfect score
+          Graduated with a Physics, Chemistry, Mathematics, Economics combination.
         </Typography>
       </TimelineContent>
     </TimelineItem>

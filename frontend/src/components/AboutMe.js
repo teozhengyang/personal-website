@@ -49,6 +49,14 @@ const AboutMe = () => {
         After all, life’s too exciting to just stay behind the screen!
       </p>
 
+      <p class='about-me-text'>
+        Languages: Python, Java, JavaScript, TyoeScript, SQL, HTML, CSS, Solidity
+        <br />
+        Frameworks: React, Flask, Django
+        <br />
+        Others: Figma, Docker, AWS, Git, Jira, Selenium, Material UI
+      </p>
+
     </div>
     
   );

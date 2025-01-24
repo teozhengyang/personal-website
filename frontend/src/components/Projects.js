@@ -49,7 +49,7 @@ const projects = [
   },
   {
     title: 'Scheduling App',
-    description: 'A event scheduling app built with JavaFX to help students plan their timetable.',
+    description: 'An event scheduling app built with JavaFX to help students plan their timetable.',
     image: timetabros,
     github: 'https://github.com/teozhengyang/tp',
   },
