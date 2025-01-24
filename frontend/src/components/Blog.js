@@ -20,7 +20,7 @@ const Blog = () => {
         align="center" 
         sx={{ marginBottom: { xs: 2, md: 4 }, fontWeight: 'bold' }}
       >
-        My Blog Articles
+        My Blog
       </Typography>
       <Grid2 container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {articles.map((article, index) => (

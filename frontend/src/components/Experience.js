@@ -105,7 +105,7 @@ const Education = () => (
 const Timelines = () => {
   return (
     <Box sx={{ padding: 6 }} id='experience'>
-      <h1>Experience</h1>
+      <h1>My Experiences</h1>
       <Grid2 container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid2 size={6}>
           <Typography variant="h5" sx={{ marginBottom: 2 }}>Work</Typography>
