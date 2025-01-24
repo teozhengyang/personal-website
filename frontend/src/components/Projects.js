@@ -46,7 +46,7 @@ const projects = [
     title: 'Personal Portfolio Website',
     description: 'A portfolio website built using React.js to showcase my work and skills.',
     image: header,
-    github: 'https://github.com/teozhengyang/personal-website',
+    github: 'https://github.com/teozhengyang/personal_website',
   },
   {
     title: 'Scheduling App',
