@@ -1,14 +1,14 @@
 import React from 'react';
 import { Box, Typography, Grid2, Card, CardMedia, CardContent, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import games from '../assets/games.jpg';
-import header from '../assets/header.jpg';
-import calculator from '../assets/calculator.jpg';
-import chatbot from '../assets/chatbot.jpg';
-import docker_aws from '../assets/docker_aws.jpg';
-import schedule from '../assets/schedule.png';
-import eventify from '../assets/eventify.jpg';
-import calcifer from '../assets/calcifer.jpg';
+import games from '../assets/images/projects/games.jpg';
+import header from '../assets/images/introduction/header.jpg';
+import calculator from '../assets/images/projects/calculator.jpg';
+import chatbot from '../assets/images/projects/chatbot.jpg';
+import docker_aws from '../assets/images/projects/docker_aws.jpg';
+import schedule from '../assets/images/projects/schedule.png';
+import eventify from '../assets/images/projects/eventify.jpg';
+import calcifer from '../assets/images/projects/calcifer.jpg';
 
 const projects = [
   

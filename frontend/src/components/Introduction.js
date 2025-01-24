@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, IconButton } from '@mui/material';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
-import image from '../assets/header.jpg';
+import image from '../assets/images/introduction/header.jpg';
 
 const Section = () => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Grid2, Card, CardMedia, CardContent, Button } from '@mui/material';
 import MediumIcon from '@mui/icons-material/LibraryBooks';
-import work_in_progress from '../assets/work-in-progress.jpg';
+import work_in_progress from '../assets/images/blog/work-in-progress.jpg';
 
 const articles = [
   {

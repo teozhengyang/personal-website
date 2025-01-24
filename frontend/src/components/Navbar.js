@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Button, Box } from '@mui/material';
-import logo from '../assets/penguin.png';
+import logo from '../assets/images/introduction/penguin.png';
 
 const Navbar = () => {
   // Function to handle smooth scrolling
