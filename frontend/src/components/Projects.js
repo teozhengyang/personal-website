@@ -63,22 +63,29 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Box sx={{ padding: 10, backgroundColor: '#181818' }} id="project">
-      <Typography variant="h4" align="center" sx={{ marginBottom: 4, fontWeight: 'bold' }}>
+    <Box sx={{ padding: { xs: 4, md: 10 }, backgroundColor: '#181818' }} id="project">
+      <Typography 
+        variant="h4" 
+        align="center" 
+        sx={{ marginBottom: { xs: 2, md: 4 }, fontWeight: 'bold' }}
+      >
         My Projects
       </Typography>
-      <Grid2 container spacing={4} justifyContent="center">
+      <Grid2 container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {projects.map((project, index) => (
-          <Grid2 item size={3} key={index}>
+          <Grid2 
+            size={{ xs: 5, sm: 4, md: 3 }}
+            key={index}
+          >
             <Card sx={{ boxShadow: 3, borderRadius: 2 }}>
               <CardMedia
                 component="img"
                 height="200"
                 image={project.image}
                 alt={project.title}
-                style={{ backgroundColor: "black"}}
+                style={{ backgroundColor: "black" }}
               />
-              <CardContent style={{ backgroundColor: "#212121"}}>
+              <CardContent style={{ backgroundColor: "#212121" }}>
                 <Typography variant="h6" fontWeight="bold" color="white">
                   {project.title}
                 </Typography>
@@ -91,6 +98,7 @@ const Projects = () => {
                   href={project.github} 
                   target="_blank" 
                   startIcon={<GitHubIcon />}
+                  fullWidth
                 >
                   View on GitHub
                 </Button>
@@ -99,7 +107,8 @@ const Projects = () => {
           </Grid2>
         ))}
       </Grid2>
-    </Box>
+    </Box>  
+
   );
 };
 
