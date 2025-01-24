@@ -49,7 +49,7 @@ const Navbar = () => {
               },
             }}
           >
-            Experience
+            Experiences
           </Button>
           <Button
             onClick={() => scrollToSection('project')}

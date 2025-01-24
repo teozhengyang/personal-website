@@ -11,3 +11,21 @@
     line-height: 2;
     text-align: left;
 }
+
+#about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: one for text, one for image */
+    gap: 50px; /* Space between grid items */
+}
+
+#about-me-image {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    #about-me-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
