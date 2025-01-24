@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar position="sticky" sx={{ backgroundColor: '#232323' }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'left' }}>
           {/* Logo on the left */}
           <Box sx={{ display: 'flex', alignItems: 'center', marginRight: 2 }}>
             <Button onClick={() => scrollToSection('header')} style={{ textDecoration: 'none' }}>
