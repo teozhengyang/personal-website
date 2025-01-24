@@ -21,12 +21,11 @@ const AboutMe = () => {
       </p>
 
       <br />
-
-      <p class='about-me-text'>
-        Languages: CSS, HTML, Java, JavaScript, Python, Solidity, SQL, TypeScript 
+      <p class="about-me-text">
+        Languages: CSS, HTML, Java, JavaScript, Python, Solidity, SQL, TypeScript
         <br />
         Frameworks: Django, Flask, React.js
-        <br />
+        <br/>
         Others: Amazon Web Services, Docker, Figma, Git, Selenium
       </p>
 

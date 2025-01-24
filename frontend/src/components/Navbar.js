@@ -75,6 +75,18 @@ const Navbar = () => {
           >
             Blog
           </Button>
+          <Button
+            onClick={() => scrollToSection('contact')}
+            sx={{
+              color: '#A0A0A0',
+              '&:hover': {
+                color: 'white',
+                backgroundColor: '#232323'
+              },
+            }}
+          >
+            Contact Me
+          </Button>
         </Toolbar>
       </AppBar>
 
