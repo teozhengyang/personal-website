@@ -5,7 +5,7 @@ import games from '../assets/images/projects/games.jpg';
 import header from '../assets/images/introduction/header.jpg';
 import calculator from '../assets/images/projects/calculator.jpg';
 import chatbot from '../assets/images/projects/chatbot.jpg';
-import docker_aws from '../assets/images/projects/docker_aws.jpg';
+import voting from '../assets/images/projects/voting.jpg';
 import schedule from '../assets/images/projects/schedule.png';
 import eventify from '../assets/images/projects/eventify.jpg';
 import calcifer from '../assets/images/projects/calcifer.jpg';
@@ -25,10 +25,10 @@ const projects = [
     github: 'https://github.com/teozhengyang/ip',
   },
   {
-    title: 'Docker and AWS',
-    description: 'A simple Python script to deploy a Docker container on AWS EC2 instance.',
-    image: docker_aws,
-    github: 'https://github.com/teozhengyang/docker_aws',
+    title: 'Voting',
+    description: 'A simple voting app built on the Ethereum blockchain using Solidity.',
+    image: voting,
+    github: 'https://github.com/teozhengyang/voting',
   },
   {
     title: 'Event Planning App',
