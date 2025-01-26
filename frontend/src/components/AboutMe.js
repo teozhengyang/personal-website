@@ -3,6 +3,7 @@ import '../assets/css/AboutMe.css';
 import mypicture from '../assets/images/introduction/mypicture.jpg';
 
 const AboutMe = () => {
+
   return (
     <div id='about-me'>
 
