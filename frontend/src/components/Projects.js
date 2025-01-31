@@ -25,12 +25,6 @@ const projects = [
     github: 'https://github.com/teozhengyang/ip',
   },
   {
-    title: 'Voting',
-    description: 'A simple voting app built on the Ethereum blockchain using Solidity.',
-    image: voting,
-    github: 'https://github.com/teozhengyang/voting',
-  },
-  {
     title: 'Event Planning App',
     description: 'A scheduling app built with Django and React.js to help event organisers.',
     image: eventify,
@@ -44,7 +38,7 @@ const projects = [
   },
   {
     title: 'Personal Portfolio Website',
-    description: 'A portfolio website built using React.js to showcase my work and skills.',
+    description: 'A portfolio website built using React.js and Material UI to share my projects and blogs.',
     image: header,
     github: 'https://github.com/teozhengyang/personal_website',
   },
@@ -53,6 +47,12 @@ const projects = [
     description: 'An event scheduling app built with JavaFX to help students plan their timetable.',
     image: schedule,
     github: 'https://github.com/teozhengyang/tp',
+  },
+  {
+    title: 'Voting',
+    description: 'A simple voting app built on the Ethereum blockchain using Solidity.',
+    image: voting,
+    github: 'https://github.com/teozhengyang/voting',
   },
   {
     title: 'Others',
