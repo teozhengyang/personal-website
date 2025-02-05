@@ -10,11 +10,11 @@ const WorkExperience = () => (
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-        <Typography variant="h6">Cyber AI Analytics Intern</Typography>
+        <Typography variant="h6">Software Engineer Intern</Typography>
         <Typography variant="body2">Home Team Science and Technology Agency</Typography>
         <Typography variant="body2">May 2024 - Aug 2024</Typography>
         <Typography variant="body2" sx={{ marginTop: 1 }}>
-          Created phishing kit with tools like Selenium, LLMs like Llama3 and deployed onto AWS using Docker
+          Created phishing kit with tools like Selenium, LLMs like Detectron2 and deployed onto AWS using Docker
         </Typography>
       </TimelineContent>
     </TimelineItem>
