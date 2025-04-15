@@ -1,9 +1,47 @@
 import React from 'react';
-import { Box, Typography, Grid2 } from '@mui/material';
+import { Box, Typography, Grid2, Chip, Stack } from '@mui/material';
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@mui/lab';
 
+const languages = [
+  {key: 0, label: 'HTML & CSS'},
+  {key: 1, label: 'JavaScript'},
+  {key: 2, label: 'Typescript'},
+  {key: 3, label: 'Python'},
+  {key: 4, label: 'Java'},
+  {key: 5, label: 'SQL'},
+]
+
+const frameworks = [
+  {key: 0, label: 'React.js'},
+  {key: 1, label: 'Django'},
+]
+
+const others = [
+  {key: 0, label: 'AWS'},
+  {key: 1, label: 'Docker'},
+  {key: 2, label: 'Git'},
+  {key: 3, label: 'Figma'},
+  {key: 4, label: 'Selenium'},
+]
+
 const WorkExperience = () => (
+
   <Timeline position="alternate">
+    <TimelineItem>
+      <TimelineSeparator>
+        <TimelineDot color="primary" />
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent>
+        <Typography variant="h6">Full-Stack Developer Intern</Typography>
+        <Typography variant="body2">Synapxe Pte. Ltd</Typography>
+        <Typography variant="body2">May 2025 - Dec 2025</Typography>
+        <Typography variant="body2" sx={{ marginTop: 1 }}>
+          Develop, integrate, and test applications in cloud environments AWS and Azure, utilising advanced capabilities for scalability and AI services
+        </Typography>
+      </TimelineContent>
+    </TimelineItem>
+    
     <TimelineItem>
       <TimelineSeparator>
         <TimelineDot color="primary" />
@@ -19,35 +57,6 @@ const WorkExperience = () => (
       </TimelineContent>
     </TimelineItem>
 
-    <TimelineItem>
-      <TimelineSeparator>
-        <TimelineDot color="secondary" />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <Typography variant="h6">Teaching Assistant</Typography>
-        <Typography variant="body2">NUS Computing</Typography>
-        <Typography variant="body2">Jan 2024 - May 2024</Typography>
-        <Typography variant="body2" sx={{ marginTop: 1 }}>
-          Taught object-oriented and functional programming concepts using Java to first-year students
-        </Typography>
-      </TimelineContent>
-    </TimelineItem>
-
-    <TimelineItem>
-      <TimelineSeparator>
-        <TimelineDot color="success" />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <Typography variant="h6">UI/UX Designer</Typography>
-        <Typography variant="body2">Google Developer Student Club</Typography>
-        <Typography variant="body2">Sep 2023 - Jun 2024</Typography>
-        <Typography variant="body2" sx={{ marginTop: 1 }}>
-          Assisted in developing Figma prototypes for a Customer Relationship Management (CRM) system
-        </Typography>
-      </TimelineContent>
-    </TimelineItem>
   </Timeline>
 );
 
@@ -61,7 +70,7 @@ const Education = () => (
       <TimelineContent>
         <Typography variant="h6">Bachelor of Computer Science</Typography>
         <Typography variant="body2">National University of Singapore</Typography>
-        <Typography variant="body2">2022 - Present</Typography>
+        <Typography variant="body2">2022 - 2026</Typography>
         <Typography variant="body2" sx={{ marginTop: 1 }}>
           Focusa areas: Database Systems and Software Engineering
           <br/>
@@ -85,27 +94,13 @@ const Education = () => (
       </TimelineContent>
     </TimelineItem>
 
-    <TimelineItem>
-      <TimelineSeparator>
-        <TimelineDot color="success" />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent>
-        <Typography variant="h6">High School</Typography>
-        <Typography variant="body2">Nanyang Junior College</Typography>
-        <Typography variant="body2">2018 - 2019</Typography>
-        <Typography variant="body2" sx={{ marginTop: 1 }}>
-          Graduated with a Physics, Chemistry, Mathematics, Economics combination.
-        </Typography>
-      </TimelineContent>
-    </TimelineItem>
   </Timeline>
 );
 
 const Timelines = () => {
   return (
     <Box sx={{ padding: 6 }} id='experience'>
-      <h1>My Experiences</h1>
+      <h1 style={{ marginTop: '20px' }}>My Experiences</h1>
       <Grid2 container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         <Grid2 size={6}>
           <Typography variant="h5" sx={{ marginBottom: 2 }}>Work</Typography>
@@ -117,6 +112,36 @@ const Timelines = () => {
           <Education />
         </Grid2>
       </Grid2>
+
+      <div>
+        <Stack direction='row' justifyContent='center' spacing={1} marginTop={3}>
+            {languages.map((language) => (
+                <Chip
+                  label={language.label}
+                  sx={{ color: 'white', fontSize: '1rem', backgroundColor: '#212121' }}
+                  variant='outlined'
+                />
+            ))}
+        </Stack>
+        <Stack direction='row' justifyContent='center' spacing={1} marginTop={3}>
+            {frameworks.map((framework) => (
+                <Chip
+                  label={framework.label}
+                  sx={{ color: 'white', fontSize: '1rem', backgroundColor: '#212121'}}
+                  variant='outlined'
+                />
+            ))}
+        </Stack>
+        <Stack direction='row' justifyContent='center' spacing={1} marginTop={3}>
+            {others.map((other) => (
+                <Chip
+                  label={other.label}
+                  sx={{ color: 'white', fontSize: '1rem', backgroundColor: '#212121'}}
+                  variant='outlined'
+                />
+            ))}
+        </Stack>
+      </div>
     </Box>
   );
 };

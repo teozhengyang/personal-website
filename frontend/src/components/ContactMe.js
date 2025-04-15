@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { Box, Typography, Grid2, Button } from '@mui/material';
 import { LinkedIn, GitHub, Email } from '@mui/icons-material';
 
@@ -17,13 +17,28 @@ const ContactMe = () => {
       'I’m multi-slacking this Saturday.',
     ]
 
+    const [fact, setFact] = useState('');
+
+    useEffect(() => {
+      fetch('https://uselessfacts.jsph.pl/random.json?language=en')
+        .then((res) => res.json())
+        .then((data) => setFact(data.text))
+        .catch((err) => console.error('Failed to fetch useless fact:', err));
+    }, []);
+
+
   return (
     <Box sx={{ padding: { xs: 4, md: 10 }, backgroundColor: '#181818'}} id="contact">
-      <Typography variant="h4" align="center" sx={{ marginBottom: { xs: 2, md: 4 }, fontWeight: 'bold' }}>
-        Contact Me
-      </Typography>
       <Typography variant="h6" align="center" sx={{ marginBottom: { xs: 2, md: 4 } }} fontFamily={'Consolas'}>
         {quotes[day.getDay()]}
+      </Typography>
+      {fact && (
+        <Typography variant="body1" align="center" sx={{ marginBottom: 4, fontStyle: 'italic' }} color="white">
+          {`${fact}`}
+        </Typography>
+      )}
+      <Typography variant="h4" align="center" sx={{ marginBottom: { xs: 2, md: 4 }, fontWeight: 'bold' }}>
+        Contact Me
       </Typography>
       <Grid2 container spacing={2} justifyContent="center" alignItems="center">
         <Grid2 item>

@@ -7,31 +7,27 @@ const AboutMe = () => {
   return (
     <div id='about-me'>
 
-      <h1>About Me</h1>
+      <h1 id='about-me-header'>About Me</h1>
 
       <div id="about-me-container">
         <div>
           <p class='about-me-text'> 
-            I am a penultimate year Computer Science undergraduate at the National University of Singapore, specialising in database systems and software engineering.
-            My exploration of the field has led me to develop a keen interest in full-stack or front-end development.
-            I enjoy creating web applications that are both functional and visually appealing.
+            Good morning and in case I don't see you, good afternoon, good evening and good night!
+          </p>
+
+          <br />
+
+          <p class='about-me-text'>
+            I am Zheng Yang, a Computer Science undergraduate at the National University of Singapore, specialising in database systems and software engineering.
+            I have developed a keen interest in full-stack, particularly front-end development, to create functional and visually appealing applications.
           </p>
 
           <br />
 
           <p class='about-me-text'> 
             In my free time, I enjoy sports like football, basketball and F1. I also like to travel around the world and experience different cultures.
-            All these provides me a chance to escape from the digital world and recharge myself. I will be keen to explore photography in the future as well.
           </p>
 
-          <br />
-          <p class="about-me-text">
-            Languages: CSS, HTML, Java, JavaScript, Python, Solidity, SQL, TypeScript
-            <br />
-            Frameworks: Django, Flask, React.js
-            <br/>
-            Others: Amazon Web Services, Docker, Figma, Git, Selenium
-          </p>
         </div>
 
         <div>

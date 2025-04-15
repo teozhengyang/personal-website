@@ -5,6 +5,10 @@
     padding: 50px;
 }
 
+#about-me-header {
+    margin-top: 25px;
+}
+
 .about-me-text {
     font-size: 17px;;
     margin-top: 1em;
