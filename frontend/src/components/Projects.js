@@ -27,7 +27,7 @@ const projects = [
     title: 'Event Planning App',
     description: 'A scheduling app built with Django and React.js to help event organisers',
     image: eventify,
-    github: 'https://github.com/teozhengyang/eventify',
+    github: 'https://github.com/teozhengyang/Eventify-Orbital-',
   },
   {
     title: 'Calculator',
