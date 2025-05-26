@@ -14,6 +14,8 @@ const languages = [
 const frameworks = [
   {key: 0, label: 'React.js'},
   {key: 1, label: 'Django'},
+  {key: 2, label: 'FastAPI'},
+  {key: 3, label: 'Spring Boot'},
 ]
 
 const others = [
