@@ -18,14 +18,14 @@ const AboutMe = () => {
           <br />
 
           <p class='about-me-text'>
-            I am Zheng Yang, a Computer Science undergraduate at the National University of Singapore, specialising in database systems and software engineering.
-            I have developed a keen interest in full-stack, particularly front-end development, to create functional and visually appealing applications.
+            I’m Zheng Yang, a Computer Science undergraduate at NUS, specializing in database systems and AI. 
+            I’m passionate about full-stack development, with a strong focus on crafting clean, functional, and user-friendly front ends.
           </p>
 
           <br />
 
           <p class='about-me-text'> 
-            In my free time, I enjoy sports like football, basketball and F1. I also like to travel around the world and experience different cultures.
+            Beyond tech, I’m into football, basketball, F1, music festivals, and traveling the world to experience new cultures.
           </p>
 
         </div>
