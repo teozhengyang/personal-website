@@ -47,7 +47,7 @@ const WorkExperience = () => (
     
     <TimelineItem>
       <TimelineSeparator>
-        <TimelineDot color="primary" />
+        <TimelineDot color="secondary" />
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
