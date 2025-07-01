@@ -1,4 +1,4 @@
-import mypicture from './mypicture.jpg'
+import mypicture from './mypicture1.jpg'
 import { useRef } from 'react'
 
 const experiences = [
