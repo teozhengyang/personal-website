@@ -17,7 +17,7 @@ const skillCategories = [
   },
   {
     category: "Backend",
-    skills: ["FastAPI", "Django", "Spring Boot"],
+    skills: ["FastAPI", "Django", "Spring Boot", "Express.js"],
   },
   {
     category: "Frontend",
