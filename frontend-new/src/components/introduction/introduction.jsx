@@ -9,11 +9,11 @@ const experiences = [
 const skillCategories = [
   {
     category: "UI/UX",
-    skills: ["Figma", "Tailwind CSS", "MaterialUI"],
+    skills: ["Figma", "Tailwind CSS", "Material UI"],
   },
   {
     category: "Databases",
-    skills: ["PostgreSQL"],
+    skills: ["PostgreSQL", "MongoDB"],
   },
   {
     category: "Backend",
@@ -29,11 +29,11 @@ const skillCategories = [
   },  
   {
     category: "AI/ML",
-    skills: [""],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Keras", "Azure OpenAI"],
   },
   {
     category: "Languages",
-    skills: ["Python", "Java", "TypeScript", "JavaScript"]
+    skills: ["Python", "Java", "TypeScript", "JavaScript", "SQL"]
   }
 ];
 
