@@ -1,73 +1,65 @@
-import personalWebsite from './assets/personal-website.jpg'
-import benchmark from './assets/benchmark.jpg'
-import events from './assets/events.jpg'
-import schedule from './assets/schedule.png'
-import calcifer from './assets/calcifer.jpg'
+import { useEffect } from 'react';
+import { projects_dict } from './projectsContent';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const projects_dict = [
-  {
-    title: "Personal Portfolio",
-    description: "A modern personal website built with React.js, Tailwind CSS and DaisyUI",
-    image: personalWebsite,
-    source: "https://github.com/teozhengyang/personal-website",
-    website: "https://personal-website-teozhengyangs-projects.vercel.app/"
-  },
-  {
-    title: 'SQLancer Benchmark',
-    description: 'A benchmarking tool built using Java and Swing for SQLancer, a testing application for DBMS',
-    image: benchmark,
-    source: 'https://github.com/teozhengyang/sqlancer_benchmark',
-  },
-  {
-    title: 'Event Planning App',
-    description: 'An event planning app built with Django and React.js to help event organisers',
-    image: events,
-    source: 'https://github.com/teozhengyang/Eventify-Orbital-',
-  },
-  {
-    title: 'Scheduler',
-    description: 'A simple scheduling app built with Java and JavaFX',
-    image: schedule,
-    source: 'https://github.com/teozhengyang/tp',
-  },
-  {
-    title: 'Work in Progress',
-    description: 'Check out my profile for more updates!',
-    image: calcifer,
-    website: 'https://github.com/teozhengyang/',
-  }
-];
+export default function Projects() {
+  useEffect(() => {
+    AOS.init({ once: false, duration: 800, easing: 'ease-in-out' });
+  }, []);
 
-export default function projects() {
   return (
-    <div className="p-8 space-y-3 max-w-[1500px] mx-auto" id="projects">
+    <div className="p-8 space-y-6 max-w-[1500px] mx-auto" id="projects">
       {/* Header */}
-      <h1 className="text-3xl font-bold text-left">Projects</h1>
-      <div className="divider"></div>
+      <h1
+        className="text-3xl font-extrabold text-left text-[#6699CC]"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Projects
+      </h1>
+      <div className="divider" data-aos="zoom-in" data-aos-delay="200"></div>
 
       {/* Grid of cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-[#4A5568]">
         {projects_dict.map((project, idx) => (
-          <div key={idx} className="card bg-base-200 shadow-sm">
-            <figure>
+          <div
+            key={idx}
+            className="card bg-base-200 hover:shadow-xl transition-shadow duration-200 rounded-xl overflow-hidden"
+            data-aos="flip-left"
+            data-aos-delay={200}
+          >
+            <figure className="overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                className="h-48 w-full object-cover"
+                className="h-48 w-full object-cover transition-transform duration-200 hover:scale-105"
               />
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">{project.title}</h2>
-              <p>{project.description}</p>
+            <div className="card-body space-y-3">
+              <h2 className="card-title font-bold text-lg">{project.title}</h2>
+              <p className="text-sm leading-relaxed">{project.description}</p>
               <div className="card-actions justify-end">
                 {project.source && (
-                  <a href={project.source} target="_blank" rel="noopener noreferrer">
-                    <button className="btn btn-soft btn-sm">Source Code</button>
+                  <a
+                    href={project.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-outline btn-sm text-[#4A5568] border-[#4A5568] hover:bg-[#4A5568] hover:text-white transition-colors duration-200">
+                      Source Code
+                    </button>
                   </a>
                 )}
                 {project.website && (
-                  <a href={project.website} target="_blank" rel="noopener noreferrer">
-                    <button className="btn btn-soft btn-sm">Website</button>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="btn btn-outline btn-sm text-[#4A5568] border-[#4A5568] hover:bg-[#4A5568] hover:text-white transition-colors duration-200">
+                      Website
+                    </button>
                   </a>
                 )}
               </div>
@@ -75,7 +67,6 @@ export default function projects() {
           </div>
         ))}
       </div>
-
     </div>
-  )
+  );
 }

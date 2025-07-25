@@ -1,4 +1,4 @@
-import header from './header1.jpg'
+import header from './header.jpg'
 
 export default function LandingPage() {
   return (
@@ -9,11 +9,11 @@ export default function LandingPage() {
     >      
       <div className="hero-content text-neutral-content text-center relative z-10">
         <div className="max-w-md px-4">
-          <h1 className="mb-5 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F8FAFC] drop-shadow-lg">
             Zheng Yang
           </h1>
-          <hr className="my-6 sm:my-8 border-gray-900" />
-          <p className="mb-5 text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 drop-shadow-lg">
+          <hr className="my-6 border-[#F8FAFC]" />
+          <p className="mb-5 mr-1 text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg">
             Building ideas into code
           </p>
         </div>
