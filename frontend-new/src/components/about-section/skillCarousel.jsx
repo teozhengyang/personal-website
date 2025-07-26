@@ -24,13 +24,6 @@ export default function SkillCarousel() {
     };
   }, []);
 
-  const scrollLeft = () => {
-    scrollContainerRef.current.scrollBy({ left: -250, behavior: "smooth" });
-  };
-  const scrollRight = () => {
-    scrollContainerRef.current.scrollBy({ left: 250, behavior: "smooth" });
-  };
-
   return (
     <div className="space-y-6" data-aos="fade-left">
       <h2 className="text-xl font-bold text-left text-[#4A5568]">🧰 Skills</h2>
@@ -38,7 +31,7 @@ export default function SkillCarousel() {
       <div className="relative text-[#4A5568] overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex space-x-4 overflow-x-auto overflow-y-hidden px-4 sm:px-8 pb-2 scrollbar-hide cursor-grab active:cursor-grabbing"
+          className="flex space-x-4 overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing"
           style={{
             scrollSnapType: "x mandatory",
             scrollbarWidth: "none",
@@ -66,19 +59,6 @@ export default function SkillCarousel() {
             </div>
           ))}
         </div>
-
-        <button
-          onClick={scrollLeft}
-          className="absolute top-1/2 left-0 sm:left-2 -translate-y-1/2 bg-[#F7FAFC] hover:bg-[#E2E8F0] p-2 rounded-full shadow-md transition z-10"
-        >
-          ←
-        </button>
-        <button
-          onClick={scrollRight}
-          className="absolute top-1/2 right-0 sm:right-2 -translate-y-1/2 bg-[#F7FAFC] hover:bg-[#E2E8F0] p-2 rounded-full shadow-md transition z-10"
-        >
-          →
-        </button>
       </div>
     </div>
   );
