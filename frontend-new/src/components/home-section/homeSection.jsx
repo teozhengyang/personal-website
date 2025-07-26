@@ -1,10 +1,10 @@
-import header from './header.jpg'
+import home from '../../assets/home-section/home.jpg';
 
-export default function LandingPage() {
+export default function HomeSection() {
   return (
     <div
       className="hero min-h-screen bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: `url(${header})` }}
+      style={{ backgroundImage: `url(${home})` }}
       id="home"
     >      
       <div className="hero-content text-neutral-content text-center relative z-10">

@@ -1,8 +1,8 @@
-import logo from './logo.png';
+import logo from '../../assets/navbar-section/logo.png';
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-200 sticky top-0 z-50 text-[#6699CC] shadow-md">
+    <div className="navbar bg-base-200 fixed top-0 z-50 text-[#6699CC] shadow-md">
       {/* Logo */}
       <div className="flex-1 items-center space-x-3 ml-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />

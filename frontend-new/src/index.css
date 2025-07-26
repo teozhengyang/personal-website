@@ -1,3 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Hide scrollbars for skill cards container */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Ensure no horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Ensure containers don't exceed viewport */
+* {
+  box-sizing: border-box;
+}

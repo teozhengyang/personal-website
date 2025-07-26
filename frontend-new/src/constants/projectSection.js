@@ -1,8 +1,8 @@
-import personalWebsite from './assets/personal-website.jpg'
-import benchmark from './assets/benchmark.jpg'
-import events from './assets/events.jpg'
-import schedule from './assets/schedule.png'
-import calcifer from './assets/calcifer.jpg'
+import personalWebsite from '../assets/project-section/personal-website.jpg';
+import benchmark from '../assets/project-section/benchmark.jpg';
+import events from '../assets/project-section/events.jpg';
+import schedule from '../assets/project-section/schedule.png';
+import calcifer from '../assets/project-section/calcifer.jpg';
 
 export const projects_dict = [
   {
@@ -10,7 +10,6 @@ export const projects_dict = [
     description: "A modern personal website built with React and Tailwind CSS",
     image: personalWebsite,
     source: "https://github.com/teozhengyang/personal-website",
-    website: "https://personal-website-teozhengyangs-projects.vercel.app/"
   },
   {
     title: 'SQLancer Benchmark',
