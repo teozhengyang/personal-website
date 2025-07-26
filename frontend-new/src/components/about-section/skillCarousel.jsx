@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { skillCategories } from '../../constants/aboutSectionContent';
+import { skillCategories } from '../../constants/aboutSection';
 
 export default function SkillCarousel() {
   const scrollContainerRef = useRef(null);
