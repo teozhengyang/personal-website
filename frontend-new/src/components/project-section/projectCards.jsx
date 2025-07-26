@@ -1,4 +1,4 @@
-import { projects_dict } from '../../constants/projectSectionContent';
+import { projects_dict } from '../../constants/projectSection';
 
 export default function ProjectCards() {
   return (
