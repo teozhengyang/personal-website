@@ -1,4 +1,4 @@
-import { experiences } from '../../constants/aboutSectionContent';
+import { experiences } from '../../constants/aboutSection';
 
 export default function ExperienceList() {
   return (
