@@ -61,9 +61,9 @@ export default function SkillCarousel() {
 
   return (
     <div className="space-y-6" data-aos="fade-left">
-      <h2 className="text-xl font-bold text-left text-[#4A5568]">🧰 Skills</h2>
+      <h2 className="text-xl font-bold text-left text-[#4A5568] dark:text-[#A0AEC0]">🧰 Skills</h2>
 
-      <div className="relative text-[#4A5568] overflow-hidden">
+      <div className="relative text-[#4A5568] dark:text-[#A0AEC0] overflow-hidden">
         <div
           ref={scrollContainerRef}
           className="flex space-x-4 overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
