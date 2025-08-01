@@ -3,9 +3,14 @@ import { skillCategories } from '../../constants/aboutSection';
 
 export default function SkillCarousel() {
   const scrollContainerRef = useRef(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
+
+    // Wheel scroll for horizontal
     const handleWheel = (e) => {
       if (container && container.contains(e.target)) {
         e.preventDefault();
@@ -13,13 +18,43 @@ export default function SkillCarousel() {
       }
     };
 
+    // Mouse dragging
+    const handleMouseDown = (e) => {
+      if (!container) return;
+      isDragging.current = true;
+      container.classList.add('cursor-grabbing');
+      startX.current = e.pageX - container.offsetLeft;
+      scrollLeft.current = container.scrollLeft;
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDragging.current || !container) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = (x - startX.current) * 1.5; // Scroll-fast multiplier
+      container.scrollLeft = scrollLeft.current - walk;
+    };
+
+    const handleMouseUp = () => {
+      isDragging.current = false;
+      container?.classList.remove('cursor-grabbing');
+    };
+
     if (container) {
       container.addEventListener('wheel', handleWheel, { passive: false });
+      container.addEventListener('mousedown', handleMouseDown);
+      container.addEventListener('mousemove', handleMouseMove);
+      container.addEventListener('mouseleave', handleMouseUp);
+      container.addEventListener('mouseup', handleMouseUp);
     }
 
     return () => {
       if (container) {
         container.removeEventListener('wheel', handleWheel);
+        container.removeEventListener('mousedown', handleMouseDown);
+        container.removeEventListener('mousemove', handleMouseMove);
+        container.removeEventListener('mouseleave', handleMouseUp);
+        container.removeEventListener('mouseup', handleMouseUp);
       }
     };
   }, []);
@@ -31,11 +66,11 @@ export default function SkillCarousel() {
       <div className="relative text-[#4A5568] overflow-hidden">
         <div
           ref={scrollContainerRef}
-          className="flex space-x-4 overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing"
+          className="flex space-x-4 overflow-x-auto overflow-y-hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
           style={{
-            scrollSnapType: "x mandatory",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
+            scrollSnapType: 'x mandatory',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
           }}
         >
           {skillCategories.map(({ category, skills }, idx) => (
