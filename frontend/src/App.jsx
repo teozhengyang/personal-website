@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import 'aos/dist/aos.css'
 import './App.css'
 
