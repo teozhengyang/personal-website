@@ -6,7 +6,7 @@ export default function ProjectSection() {
   useAOS();
 
   return (
-    <div className="p-8 space-y-6 mt-10 max-w-[1500px] mx-auto scroll-mt-20" id="projects">
+    <div className="p-8 space-y-6 mt-10 max-w-[1500px] mx-auto scroll-mt-20 font-jetbrains" id="projects">
       {/* Header */}
       <h1
         className="text-3xl font-extrabold text-left text-[#6699CC]"

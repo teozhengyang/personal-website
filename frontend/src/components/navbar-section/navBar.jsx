@@ -2,7 +2,7 @@ import logo from '../../assets/navbar-section/logo.png';
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-200 fixed top-0 z-50 text-[#6699CC] shadow-md">
+    <div className="navbar bg-base-200 fixed top-0 z-50 text-[#6699CC] shadow-md font-inter">
       {/* Logo */}
       <div className="flex-1 items-center space-x-3 ml-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />
@@ -15,7 +15,7 @@ export default function NavBar() {
             <li key={item}>
               <a
                 href={`#${item}`}
-                className="px-3 py-2 rounded-md font-medium hover:text-[#4A5568] transition-all duration-200"
+                className="px-3 py-2 rounded-md font-semibold md:hover:text-[#6699EE] transition-all duration-200"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>

@@ -14,7 +14,7 @@ export default function AboutSection() {
   });
 
   return (
-    <div className="p-8 space-y-6 mt-10 max-w-[1500px] mx-auto scroll-mt-20" id="about">
+    <div className="p-8 space-y-6 mt-10 max-w-[1500px] mx-auto scroll-mt-20 font-inter" id="about">
       {/* Header */}
       <div className="space-y-4" data-aos="fade-down">
         <h1 className="text-4xl font-extrabold text-left text-[#6699CC]">About Me</h1>
