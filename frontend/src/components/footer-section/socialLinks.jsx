@@ -2,7 +2,7 @@ import { HiMail } from 'react-icons/hi';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function SocialLinks() {
-  const iconClass = "h-10 w-10 text-[#4A5568]";
+  const iconClass = "h-8 w-8 text-[#4A5568]";
   const linkClass = "md:hover:bg-[#6699CC]/10 p-3 rounded-full transition";
 
   return (

@@ -1,3 +1,4 @@
+import { TypeAnimation } from 'react-type-animation';
 import home from '../../assets/home-section/home.jpg';
 
 export default function HomeSection() {
@@ -6,16 +7,32 @@ export default function HomeSection() {
       className="hero min-h-screen bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: `url(${home})` }}
       id="home"
-    >      
+    >
+      <div className="absolute inset-0 bg-black/40 z-0" />
+
       <div className="hero-content text-neutral-content text-center relative z-10">
         <div className="max-w-md px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F8FAFC] drop-shadow-lg">
-            Zheng Yang
-          </h1>
+          {/* Typing animation for name*/}
+          <TypeAnimation
+            sequence={['Zheng Yang']}
+            wrapper="h1"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F8FAFC] drop-shadow-lg"
+            speed={80}
+            repeat={0}
+            cursor={false}
+          />
+
           <hr className="my-6 border-[#F8FAFC]" />
-          <p className="mb-5 mr-1 text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg">
-            Building ideas into code
-          </p>
+
+          {/* Typing animation for subtitle */}
+          <TypeAnimation
+            sequence={[1500, "Building ideas into code", 1500, "Automating the future", 1500, "Bridging code and creativity"]}
+            wrapper="p"
+            className="mb-5 mr-1 text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg"
+            speed={60}
+            repeat={Infinity}
+            cursor={false}
+          />
         </div>
       </div>
     </div>
