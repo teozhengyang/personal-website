@@ -12,7 +12,7 @@ export default function AboutText() {
       </p>
       <p className="text-[#4A5568] dark:text-[#A0AEC0] leading-relaxed">
         Outside of tech, I’m an avid <span className="italic">football</span> and <span className="italic">basketball</span> fan, a <span className="italic">Formula 1</span> enthusiast, 
-        and someone who finds joy in <span className="italic">music festivals</span> and <span className="italic">traveling</span> the world to experience diverse cultures and perspectives.
+        and someone who finds joy in <span className="italic">music festivals</span> and <span className="italic">travelling</span> the world to experience diverse cultures and perspectives.
       </p>
     </div>
   );

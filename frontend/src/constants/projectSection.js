@@ -1,16 +1,14 @@
-import personalWebsite from '../assets/project-section/personal-website.jpg';
 import benchmark from '../assets/project-section/benchmark.jpg';
 import events from '../assets/project-section/events.jpg';
 import schedule from '../assets/project-section/schedule.png';
 import tree from '../assets/project-section/tree.png';
-import calcifer from '../assets/project-section/calcifer.jpg';
 
 export const projects_dict = [
   {
-    title: "Personal Portfolio",
-    description: "A modern personal website built with React and Tailwind CSS",
-    image: personalWebsite,
-    source: "https://github.com/teozhengyang/personal-website",
+    title: 'Bacteria Phages Graph',
+    description: 'A graph visualisation tool for bacteria phages built with React and D3',
+    image: tree,
+    source: 'https://github.com/teozhengyang/bacteria-phages-graph',
   },
   {
     title: 'SQLancer Benchmark',
@@ -29,17 +27,5 @@ export const projects_dict = [
     description: 'A simple scheduling app built with Java and JavaFX',
     image: schedule,
     source: 'https://github.com/teozhengyang/tp',
-  },
-  {
-    title: 'Bacteria Phages Graph',
-    description: 'A graph visualisation tool for bacteria phages built with React and D3',
-    image: tree,
-    source: 'https://github.com/teozhengyang/bacteria-phages-graph',
-  },
-  {
-    title: 'Work in Progress',
-    description: 'Check out my profile for more updates!',
-    image: calcifer,
-    website: 'https://github.com/teozhengyang/',
   }
 ];

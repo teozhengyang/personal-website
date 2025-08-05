@@ -28,13 +28,6 @@ export default function ProjectCards() {
                   </button>
                 </a>
               )}
-              {project.website && (
-                <a href={project.website} target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-outline btn-sm text-[#4A5568] dark:text-[#A0AEC0] border-[#4A5568] hover:bg-[#4A5568] hover:text-white transition-colors duration-200">
-                    Website
-                  </button>
-                </a>
-              )}
             </div>
           </div>
         </div>
