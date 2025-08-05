@@ -12,7 +12,7 @@ export default function HomeSection() {
 
       <div className="hero-content text-neutral-content text-center relative z-10">
         <div className="max-w-md px-4">
-          {/* Typing animation for name*/}
+          {/* Typing animation for name */}
           <TypeAnimation
             sequence={['Zheng Yang']}
             wrapper="h1"
@@ -24,15 +24,24 @@ export default function HomeSection() {
 
           <hr className="my-6 border-[#F8FAFC]" />
 
-          {/* Typing animation for subtitle */}
-          <TypeAnimation
-            sequence={[1500, "Building ideas into code", 1500, "Automating the future", 1500, "Bridging code and creativity"]}
-            wrapper="p"
-            className="mb-5 mr-1 text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg"
-            speed={60}
-            repeat={Infinity}
-            cursor={false}
-          />
+          {/* Subtitle wrapper with fixed height and flex centering */}
+          <div className="mb-5 mr-1 h-14 flex items-center justify-center">
+            <TypeAnimation
+              sequence={[
+                1500,
+                'Building ideas into code',
+                1500,
+                'Automating the future',
+                1500,
+                'Bridging code and creativity',
+              ]}
+              wrapper="p"
+              className="text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg"
+              speed={60}
+              repeat={Infinity}
+              cursor={false}
+            />
+          </div>
         </div>
       </div>
     </div>
