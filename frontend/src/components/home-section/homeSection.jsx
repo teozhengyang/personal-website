@@ -4,14 +4,14 @@ import home from '../../assets/home-section/home.jpg';
 export default function HomeSection() {
   return (
     <div
-      className="hero min-h-screen bg-cover bg-center bg-no-repeat relative"
+      className="hero min-h-screen bg-cover bg-center bg-no-repeat relative font-inter"
       style={{ backgroundImage: `url(${home})` }}
       id="home"
     >
       <div className="absolute inset-0 bg-black/40 z-0" />
 
       <div className="hero-content text-neutral-content text-center relative z-10">
-        <div className="max-w-md px-4">
+        <div className="max-w-md px-3">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#F8FAFC] drop-shadow-lg">
             Zheng Yang
           </h1>
@@ -30,7 +30,7 @@ export default function HomeSection() {
                 'Bridging code and creativity',
               ]}
               wrapper="p"
-              className="text-lg sm:text-xl md:text-3xl font-bold text-[#F8FAFC] drop-shadow-lg"
+              className="text-lg sm:text-xl md:text-3xl font-semibold text-[#F8FAFC] drop-shadow-lg"
               speed={50}
               repeat={Infinity}
               cursor={false}
