@@ -5,6 +5,7 @@ import './App.css'
 
 import HomePage from './pages/homePage'
 import ErrorPage from './pages/errorPage'
+import Chatbot from './components/chatbot-section/chatbot'
 
 import useAOS from './hooks/useAOS'
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Chatbot />
     </BrowserRouter>
   )
 }
