@@ -2,6 +2,100 @@ import { HiSparkles, HiXMark, HiArrowRight } from 'react-icons/hi2';
 import useChatbot from '../../hooks/useChatbot';
 import { uiText } from '../../constants/chatbotSection';
 
+// Simple markdown parser component
+function MarkdownText({ text }) {
+  const parseMarkdown = (text) => {
+    // Regular expressions for different markdown patterns
+    const patterns = [
+      { regex: /\*\*(.*?)\*\*/g, tag: 'strong', className: 'font-bold' },
+      { regex: /(?<!\*)\*([^*]+)\*(?!\*)/g, tag: 'em', className: 'italic' },
+      { regex: /`(.*?)`/g, tag: 'code', className: 'bg-gray-100 text-gray-700 px-1.5 py-0.5 rounded text-xs font-mono border' },
+    ];
+    
+    // Find all matches
+    const matches = [];
+    patterns.forEach(pattern => {
+      let match;
+      const regex = new RegExp(pattern.regex.source, pattern.regex.flags);
+      while ((match = regex.exec(text)) !== null) {
+        matches.push({
+          start: match.index,
+          end: match.index + match[0].length,
+          content: match[1],
+          tag: pattern.tag,
+          className: pattern.className,
+        });
+      }
+    });
+    
+    // Sort matches by start position and remove overlapping matches
+    matches.sort((a, b) => a.start - b.start);
+    const validMatches = [];
+    matches.forEach(match => {
+      const hasOverlap = validMatches.some(existing => 
+        (match.start < existing.end && match.end > existing.start)
+      );
+      if (!hasOverlap) {
+        validMatches.push(match);
+      }
+    });
+    
+    // Build the parsed content
+    let lastIndex = 0;
+    const elements = [];
+    
+    validMatches.forEach((match, index) => {
+      // Add text before the match
+      if (match.start > lastIndex) {
+        elements.push(text.slice(lastIndex, match.start));
+      }
+      
+      // Add the formatted element
+      const Tag = match.tag;
+      elements.push(
+        <Tag key={index} className={match.className}>
+          {match.content}
+        </Tag>
+      );
+      
+      lastIndex = match.end;
+    });
+    
+    // Add remaining text
+    if (lastIndex < text.length) {
+      elements.push(text.slice(lastIndex));
+    }
+    
+    return elements.length > 0 ? elements : [text];
+  };
+
+  // Split by line breaks and handle each line
+  const lines = text.split('\n');
+  return (
+    <div className="space-y-1">
+      {lines.map((line, lineIndex) => {
+        // Check if line is a list item
+        const isListItem = line.trim().match(/^[-*•]\s+(.+)/);
+        if (isListItem) {
+          return (
+            <div key={lineIndex} className="flex items-start space-x-2">
+              <span className="text-[#6699CC] font-bold mt-0.5">•</span>
+              <span>{parseMarkdown(isListItem[1])}</span>
+            </div>
+          );
+        }
+        
+        // Regular line
+        return (
+          <div key={lineIndex}>
+            {parseMarkdown(line)}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function ChatbotModal({ isOpen, onClose }) {
   const {
     messages,
@@ -59,7 +153,11 @@ export default function ChatbotModal({ isOpen, onClose }) {
                   : 'bg-white text-gray-800 rounded-bl-md border border-gray-100 shadow-md'
               }`}
             >
-              {message.text}
+              {message.sender === 'user' ? (
+                message.text
+              ) : (
+                <MarkdownText text={message.text} />
+              )}
             </div>
           </div>
         ))}
