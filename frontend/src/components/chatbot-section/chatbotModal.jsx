@@ -105,7 +105,7 @@ export default function ChatbotModal({ isOpen, onClose }) {
     messagesEndRef,
     handleSendMessage,
     handleKeyPress
-  } = useChatbot();
+  } = useChatbot(isOpen);
 
   if (!isOpen) return null;
 

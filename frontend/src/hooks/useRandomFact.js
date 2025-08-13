@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
+import RandomFactService from '../services/RandomFact';
 
 export default function useRandomFact() {
   const [fact, setFact] = useState('');
 
   useEffect(() => {
-    fetch('https://uselessfacts.jsph.pl/random.json?language=en')
-      .then((res) => res.json())
-      .then((data) => setFact(data.text))
-      .catch((err) => console.error('Failed to fetch useless fact:', err));
+    RandomFactService.getRandomFact().then((randomFact) => {
+      setFact(randomFact);
+    });
   }, []);
 
   return fact;
