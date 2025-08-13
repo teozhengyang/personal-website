@@ -7,10 +7,10 @@ export default function ChatbotButton({ onClick, isOpen }) {
       className={`
         fixed bottom-4 right-4 z-50 w-14 h-14 md:w-16 md:h-16 md:bottom-6 md:right-6
         rounded-full bg-gradient-to-r from-[#6699CC] to-[#5588BB]
-        text-white shadow-lg hover:shadow-2xl
+        text-white shadow-lg hover:shadow-xl
         transition-transform duration-300 ease-in-out
-        flex items-center justify-center group border-2 border-white/20
-        ${isOpen ? 'scale-95 rotate-90' : 'scale-100 hover:scale-110'}
+        flex items-center justify-center group
+        ${isOpen ? 'scale-95' : 'scale-100 hover:scale-110'}
       `}
     >
       {isOpen ? (
