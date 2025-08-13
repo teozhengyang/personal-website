@@ -52,7 +52,6 @@ class ChatbotService {
       const aiResponse = data.choices[0]?.message?.content;
 
       if (aiResponse) {
-        console.log('Development Groq API response:', aiResponse);
         return { success: true, response: aiResponse };
       }
 
@@ -95,7 +94,6 @@ class ChatbotService {
       const data = await response.json();
 
       if (data.success && data.response) {
-        console.log('Production chatbot API response:', data.response);
         return { success: true, response: data.response };
       }
 
