@@ -1,5 +1,6 @@
 export const experiences = [
-  { company: "Synapxe", role: "Full Stack Developer Intern", time: "May 2025 - Present" },
+  { company: "GovTech", role: "Software Developer Intern", time: "Jan 2026 - Jun 2026" },
+  { company: "Synapxe", role: "Full Stack Developer Intern", time: "May 2025 - Dec 2025" },
   { company: "HTX", role: "Software Developer Intern", time: "May 2024 - Aug 2024" },
 ];
 

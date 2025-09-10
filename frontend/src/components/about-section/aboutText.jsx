@@ -2,7 +2,7 @@ export default function AboutText() {
   return (
     <div className="space-y-6" data-aos="fade-right">
       <h2 className="text-xl font-bold text-[#4A5568] dark:text-[#A0AEC0]">
-        👋 Hi, I'm <span className="text-[#6699CC]">Zheng Yang</span>
+        Hi, I'm <span className="text-[#6699CC]">Zheng Yang</span>
       </h2>
       <p className="text-[#4A5568] dark:text-[#A0AEC0] leading-relaxed">
         I'm a Computer Science undergraduate at <span className="font-semibold">NUS</span>, specialising in

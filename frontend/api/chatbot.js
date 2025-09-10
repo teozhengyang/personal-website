@@ -87,6 +87,7 @@ export default async function handler(req, res) {
     }
 
     // Check for API key
+    // eslint-disable-next-line no-undef
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) {
       return res.status(500).json({ error: 'API key not configured' });
