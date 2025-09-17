@@ -1,7 +1,7 @@
 export const experiences = [
-  { company: "GovTech", role: "Software Developer Intern", time: "Jan 2026 - Jun 2026" },
+  { company: "GovTech", role: "Software Engineer Intern", time: "Jan 2026 - Jun 2026" },
   { company: "Synapxe", role: "Full Stack Developer Intern", time: "May 2025 - Dec 2025" },
-  { company: "HTX", role: "Software Developer Intern", time: "May 2024 - Aug 2024" },
+  { company: "HTX", role: "Software Engineer Intern", time: "May 2024 - Aug 2024" },
 ];
 
 export const skillCategories = [

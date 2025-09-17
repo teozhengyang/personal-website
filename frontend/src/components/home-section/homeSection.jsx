@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import home from '../../assets/home-section/home.jpg';
+import home from '../../assets/home-section/DSCF0378.jpg';
 
 export default function HomeSection() {
   return (
@@ -8,7 +8,7 @@ export default function HomeSection() {
       style={{ backgroundImage: `url(${home})` }}
       id="home"
     >
-      <div className="absolute inset-0 bg-black/40 z-0" />
+      <div className="absolute inset-0 bg-black/60 z-0" />
 
       <div className="hero-content text-neutral-content text-center relative z-10">
         <div className="max-w-md px-3">
