@@ -1,7 +1,7 @@
 export const experiences = [
-  { company: "GovTech", role: "Software Engineer Intern", time: "Jan 2026 - Jun 2026" },
-  { company: "Synapxe", role: "Full Stack Developer Intern", time: "May 2025 - Dec 2025" },
-  { company: "HTX", role: "Software Engineer Intern", time: "May 2024 - Aug 2024" },
+  { company: "GovTech", role: "Software Engineer Intern", description: "", time: "Jan 2026 - Jun 2026" },
+  { company: "Synapxe", role: "Full Stack Developer Intern", description: "Agentic chatbot, AI-powered speech analysis, Computer use agents, Legacy code upgrading & refactoring", time: "May 2025 - Dec 2025" },
+  { company: "HTX", role: "Software Engineer Intern", description: "AI-powered phishing detection system", time: "May 2024 - Aug 2024" },
 ];
 
 export const skillCategories = [
@@ -15,7 +15,7 @@ export const skillCategories = [
   },
   {
     category: "Backend",
-    skills: ["FastAPI", "Django", "Spring Boot", "Express.js"],
+    skills: ["FastAPI", "Django", "Spring Boot", "Express"],
   },
   {
     category: "Frontend",
@@ -23,11 +23,11 @@ export const skillCategories = [
   },
   {
     category: "DevOps",
-    skills: ["Docker", "Kubernetes", "Git", "AWS", "Azure"],
+    skills: ["Docker", "Git", "AWS", "Azure"],
   },  
   {
     category: "AI/ML",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Keras"],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn"],
   },
   {
     category: "Languages",
