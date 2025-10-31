@@ -21,12 +21,14 @@ export default function AboutSection() {
         <div className="divider m-0"></div>
       </div>
 
-      {/* Body */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      {/* About & Profile */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 items-start">
         <AboutText />
-        <ExperienceList />
         <ProfileImage />
       </div>
+
+      {/* Experiences */}
+      <ExperienceList />
 
       {/* Skills */}
       <SkillCarousel />

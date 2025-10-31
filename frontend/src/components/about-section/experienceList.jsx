@@ -8,9 +8,10 @@ export default function ExperienceList() {
         {experiences.map((exp, idx) => (
           <li key={idx} className="rounded-xl p-4 bg-base-200 shadow-md hover:shadow-lg transition">
             <div className="text-[#4A5568] dark:text-[#A0AEC0] mb-1">
-              <span className="font-semibold">{exp.role}</span>
+              <span className="font-bold">{exp.role}</span>
             </div>
-            <div className="text-[#4A5568] dark:text-[#A0AEC0] mb-1">{exp.company}</div>
+            <div className="font-semibold text-[#4A5568] dark:text-[#A0AEC0] mb-1">{exp.company}</div>
+            <div className="text-sm text-[#4A5568] dark:text-[#A0AEC0] mt-2 mb-2">{exp.description}</div>
             <div className="text-sm text-[#718096] dark:text-[#A0AEC0] mt-1">{exp.time}</div>
           </li>
         ))}
