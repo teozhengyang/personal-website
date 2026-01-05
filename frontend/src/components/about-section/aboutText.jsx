@@ -8,11 +8,11 @@ export default function AboutText() {
         I'm a Computer Science undergraduate at <span className="font-semibold">NUS</span>, specialising in
         <span className="font-semibold"> database systems</span> and <span className="font-semibold">artificial intelligence</span>.
         My passion lies in <span className="font-semibold">full-stack development</span>: designing, building, and deploying 
-        efficient, scalable, and user-friendly end-to-end solutions.
+        efficient, scalable, and user-friendly solutions.
       </p>
       <p className="text-[#4A5568] dark:text-[#A0AEC0] leading-relaxed">
-        Outside of tech, I’m an avid <span className="italic">football</span> and <span className="italic">basketball</span> fan, a <span className="italic">Formula 1</span> enthusiast, 
-        and someone who finds joy in <span className="italic">music festivals</span> and <span className="italic">travelling</span> the world to experience diverse cultures and perspectives.
+        Outside of tech, I’m an avid <span className="italic">football</span>, <span className="italic">basketball</span> and <span className="italic">F1</span> fan.
+        I am also someone who finds joy in <span className="italic">music festivals</span> and <span className="italic">travelling</span> the world.
       </p>
     </div>
   );

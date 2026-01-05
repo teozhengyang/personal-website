@@ -41,7 +41,7 @@ const systemPrompt = `
   === Experience ===
   1. Synapxe (Full Stack Developer Intern) — May 2025 – Present
     - Maintained and enhanced an Angular-based AI chatbot with speech recognition and semantic search powered by Azure
-    OpenAI; collaborated with a cross-functional engineering team to improve reliability and user experience; deployed a Reactbased
+    OpenAI; collaborated with a cross-functional engineering team to improve reliability and user experience; deployed a React-based
     version of the chatbot to Azure for live demonstration at an AI conference
     - Led the implementation of a Computer Use Agent prototype, automating desktop tasks through LLM-driven reasoning and
     tool execution, enabling hands-free workflow automation

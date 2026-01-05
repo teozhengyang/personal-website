@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import home from '../../assets/home-section/DSCF0378.JPG';
+import home from '../../assets/home-section/DSCF0659.JPG';
 
 export default function HomeSection() {
   return (

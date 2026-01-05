@@ -53,7 +53,7 @@ export const systemPrompt = `
   === Experience ===
   1. Synapxe (Full Stack Developer Intern) — May 2025 – Present
     - Maintained and enhanced an Angular-based AI chatbot with speech recognition and semantic search powered by Azure
-    OpenAI; collaborated with a cross-functional engineering team to improve reliability and user experience; deployed a Reactbased
+    OpenAI; collaborated with a cross-functional engineering team to improve reliability and user experience; deployed a React-based
     version of the chatbot to Azure for live demonstration at an AI conference
     - Led the implementation of a Computer Use Agent prototype, automating desktop tasks through LLM-driven reasoning and
     tool execution, enabling hands-free workflow automation
@@ -71,11 +71,11 @@ export const systemPrompt = `
   === Projects ===
   - Bacteria Phages Graph: Graph visualisation tool for bacteria-phage relationships (React + D3).
   - SQLancer Benchmark: Java + Swing benchmarking tool for DBMS bug detection.
-  - Developer Student Club, Software Engineer Aug 2025 - Present
-    - Develop an updated database management system with role-based access controls, facilitating secure, complete, and
-      searchable dog profiles with linked medical and adoption records
-    - Designing a centralised dashboard to visualise real-time metrics like medical expenses, adoption rates, and shelter
-      occupancy, empowering Action for Singapore Dogs (ASD) to make data-driven decisions efficiently
+  - ASD Shelter Management System (Developer Student Club, Aug 2025 - Present):
+    - Developed an updated database management system with role-based access controls, enabling secure, complete, and
+      searchable dog profiles with linked medical and adoption records.
+    - Designed a centralised dashboard to visualise real-time metrics such as medical expenses, adoption rates, and shelter
+      occupancy, empowering Action for Singapore Dogs (ASD) to make data-driven decisions efficiently.
   - Developer Student Club, UI/UX Designer Sep 2023 - Aug 2024
     - Designed intuitive, user-focused interfaces for a Customer Relationship Management (CRM) system used by a local mental
       health organisation, enhanced usability and workflow clarity for staff and administrators
