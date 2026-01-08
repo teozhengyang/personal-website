@@ -38,20 +38,24 @@ export const systemPrompt = `
   Scholarship: NUS Merit Scholar
   Contact: +65 91678535 | teozhengyang01@gmail.com
   Links: GitHub (https://github.com/teozhengyang), LinkedIn (https://www.linkedin.com/in/teozhengyang/), 
-    Portfolio (https://personal-website-teozhengyangs-projects.vercel.app/)
+    Portfolio (https://zhengyang-personal-website.vercel.app/)
   Languages spoken: English (Native), Chinese (Native)
   Interests: Football, Basketball, Formula 1, music festivals, travelling
 
   === Skills ===
   - Programming Languages: Python, Java, JavaScript, TypeScript, SQL, HTML, CSS
   - UI/UX: Figma, Tailwind CSS, Material UI
-  - Frameworks/Libraries: Django, FastAPI, Spring Boot, Express, React, Angular
+  - Frameworks/Libraries: Django, FastAPI, Spring Boot, Express, React, Angular, Next
   - Databases: PostgreSQL, MongoDB
   - DevOps: AWS, Azure, Docker, Git
   - AI/ML: PyTorch, TensorFlow, Scikit-learn
 
   === Experience ===
-  1. Synapxe (Full Stack Developer Intern) — May 2025 – Present
+  1. GovTech (Software Engineer Intern) — Jan 2026 - Present
+    - Developed and maintained a Node.js backend for an admin portal, delivering new features and enhancements for a production rewards system
+    - Built and improved user-facing and admin frontends using Next.js, focusing on usability, performance, and feature delivery
+    - Implemented frontend solutions for cross-company collaboration projects, working with external partners to integrate shared product features
+  2. Synapxe (Full Stack Developer Intern) — May 2025 – Dec 2025
     - Maintained and enhanced an Angular-based AI chatbot with speech recognition and semantic search powered by Azure
     OpenAI; collaborated with a cross-functional engineering team to improve reliability and user experience; deployed a React-based
     version of the chatbot to Azure for live demonstration at an AI conference
@@ -62,7 +66,7 @@ export const systemPrompt = `
     - Upgraded an enterprise Angular patient management system, refactored legacy components, and authored comprehensive
     tests to improve maintainability and frontend stability
 
-  2. Home Team Science & Technology Agency (Software Engineer Intern) — May 2024 – Aug 2024
+  3. Home Team Science & Technology Agency (Software Engineer Intern) — May 2024 – Aug 2024
     - Built a phishing detection system using a whitelisted domain database and Selenium-based web scraping for real-time
     website analysis; deployed the full pipeline on AWS for scalable access and automation
     - Integrated Detectron2 and Llama3 ML models to perform visual element detection and scam-pattern analysis, significantly
@@ -71,11 +75,7 @@ export const systemPrompt = `
   === Projects ===
   - Bacteria Phages Graph: Graph visualisation tool for bacteria-phage relationships (React + D3).
   - SQLancer Benchmark: Java + Swing benchmarking tool for DBMS bug detection.
-  - ASD Shelter Management System (Developer Student Club, Aug 2025 - Present):
-    - Developed an updated database management system with role-based access controls, enabling secure, complete, and
-      searchable dog profiles with linked medical and adoption records.
-    - Designed a centralised dashboard to visualise real-time metrics such as medical expenses, adoption rates, and shelter
-      occupancy, empowering Action for Singapore Dogs (ASD) to make data-driven decisions efficiently.
+  - CodeCompass: Free programming helper website to help fellow jobseekers with coding interview preparation and learning resources.
   - Developer Student Club, UI/UX Designer Sep 2023 - Aug 2024
     - Designed intuitive, user-focused interfaces for a Customer Relationship Management (CRM) system used by a local mental
       health organisation, enhanced usability and workflow clarity for staff and administrators
@@ -94,7 +94,6 @@ export const systemPrompt = `
   - Learning new languages and frameworks eg Go, C++, Vue, Flutter.
   - Exploring AI and machine learning concepts for future projects.
 `;
-
 
 export const initialMessage = [
   { 
