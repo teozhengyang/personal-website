@@ -5,7 +5,7 @@ export default function AboutText() {
         Hi, I'm <span className="text-[#6699CC]">Zheng Yang</span>
       </h2>
       <p className="text-[#4A5568] dark:text-[#A0AEC0] leading-relaxed">
-        I'm a Computer Science undergraduate at <span className="font-semibold">NUS</span>, specialising in
+        I'm a Computer Science undergraduate at <span className="font-semibold">National University of Singapore</span>, specialising in
         <span className="font-semibold"> database systems</span> and <span className="font-semibold">artificial intelligence</span>.
         My passion lies in <span className="font-semibold">full-stack development</span>: designing, building, and deploying 
         efficient, scalable, and user-friendly solutions.
