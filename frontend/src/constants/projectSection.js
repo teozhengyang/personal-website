@@ -1,6 +1,7 @@
 import benchmark from '../assets/project-section/benchmark.jpg';
 import tree from '../assets/project-section/tree.png';
 import helper from '../assets/project-section/helper.jpg';
+import games from '../assets/project-section/games.jpg';
 
 export const projects_dict = [
   {
@@ -8,6 +9,12 @@ export const projects_dict = [
     description: 'Website to help with coding interview preparation and learning resources',
     image: helper,
     source: 'https://github.com/teozhengyang/programming-helper'
+  },
+  {
+    title: 'Games Catalog',
+    description: 'A catalog of games with search and filter functionalities',
+    image: games,
+    source: 'https://github.com/teozhengyang/games'
   },
   {
     title: 'Bacteria Phages Graph',
