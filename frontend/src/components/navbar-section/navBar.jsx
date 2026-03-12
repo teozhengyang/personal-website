@@ -1,55 +1,46 @@
 import logo from '../../assets/navbar-section/logo.png';
+import { useState } from 'react';
+import Hamburger from "hamburger-react";
 
 export default function NavBar() {
+
+  const [isOpen, setOpen] = useState(false);
   return (
-    <div className="navbar bg-base-200 fixed top-0 z-50 text-[#6699CC] shadow-md font-inter">
+    <div className="navbar bg-[#1D1F24] fixed top-0 z-50 text-[#6699CC] font-jetbrains">
       {/* Logo */}
       <div className="flex-1 items-center space-x-3 ml-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />
       </div>
 
       {/* Hamburger menu for mobile */}
-      <div className="flex-none md:hidden">
-        <div className="dropdown dropdown-end">
-          <button tabIndex={0} className="btn btn-ghost">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40"
-          >
-            {['home', 'about', 'projects',].map((item) => (
-              <li key={item}>
+      <div className="flex-none md:hidden relative">
+        <Hamburger toggled={isOpen} toggle={setOpen} size={24} color="#6699CC" />
+        {isOpen && (
+          <ul className="absolute right-0 top-full mt-2 z-50 p-2 shadow bg-[#1D1F24] rounded-box w-40 flex flex-col gap-1">
+            {['about', 'experience', 'projects'].map((item) => (
+              <li key={item} className="list-none">
                 <a
                   href={`#${item}`}
-                  onClick={(e) => e.currentTarget.blur()}
-                  className="font-semibold hover:text-[#6699EE] focus-visible:text-[#6699EE] transition-all duration-200 text-base"
+                  onClick={() => setOpen(false)}
+                  className="block px-3 py-2 font-semibold hover:text-[#F8FAFC] transition-all duration-200 text-base text-[#6699CC]"
                 >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>
               </li>
             ))}
           </ul>
-        </div>
+        )}
       </div>
 
       {/* Horizontal menu for desktop */}
-      <div className="flex-none hidden md:block">
-        <ul className="menu menu-horizontal px-2 text-base space-x-1 touch-manipulation">
-          {['home', 'about', 'projects'].map((item) => (
+      <div className="flex-none hidden md:block mr-2">
+        <ul className="menu menu-horizontal px-2 text-base space-x-2 touch-manipulation">
+          {['about', 'experience', 'projects'].map((item) => (
             <li key={item}>
               <a
                 href={`#${item}`}
                 onClick={(e) => e.currentTarget.blur()}
-                className="px-3 py-2 rounded-md font-semibold hover:text-[#6699EE] focus-visible:text-[#6699EE] transition-all duration-200"
+                className="px-3 py-2 rounded-md font-bold hover:text-[#F8FAFC] hover:bg-transparent transition-all duration-200 text-base"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>

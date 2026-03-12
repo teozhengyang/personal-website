@@ -63,7 +63,7 @@ export default function MarkdownText({ text }) {
   const parseInlineMarkdown = (text) => {
     // Define patterns for different markdown elements
     const patterns = [
-      { regex: /\*\*(.*?)\*\*/g, tag: 'strong', className: 'font-inter text-[#2C5282] font-semibold' }, // **bold**
+      { regex: /\*\*(.*?)\*\*/g, tag: 'strong', className: 'font-jetbrains text-[#2C5282] font-semibold' }, // **bold**
       { regex: /(?<!\*)\*([^*]+)\*(?!\*)/g, tag: 'em', className: 'italic text-gray-700' }, // *italic* (but not **bold**)
       { regex: /`(.*?)`/g, tag: 'code', className: 'bg-[#f0f4f8] text-[#2C5282] px-2 py-1 rounded text-sm font-mono border border-[#d0d7e0]' }, // `inline code`
       { regex: /\[([^\]]+)\]\(([^)]+)\)/g, tag: 'a', className: 'text-blue-600 hover:underline' }, // [text](url)

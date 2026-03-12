@@ -4,7 +4,7 @@ import games from '../assets/project-section/games.jpg';
 export const projects_dict = [
   {
     title: 'Programming Helper',
-    description: 'Website to help with coding interview preparation and learning resources',
+    description: 'A catalog of programming resources and tools',
     image: helper,
     source: 'https://github.com/teozhengyang/programming-helper'
   },

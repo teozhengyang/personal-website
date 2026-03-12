@@ -1,31 +1,41 @@
+import { FiGithub } from 'react-icons/fi';
 import { projects_dict } from '../../constants/projectSection';
 
 export default function ProjectCards() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-[#4A5568] dark:text-[#A0AEC0]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
       {projects_dict.map((project, idx) => (
         <div
           key={idx}
-          className="card bg-base-200 hover:shadow-xl transition-shadow duration-200 rounded-xl overflow-hidden"
-          data-aos="flip-left"
-          data-aos-delay={200}
+          className="group flex flex-col overflow-hidden rounded-xl bg-[#1D1F24] border border-[#6699CC]/25"
+          data-aos="fade-up"
+          data-aos-delay={idx * 80}
         >
-          <figure className="overflow-hidden">
+          {/* Image */}
+          <div className="overflow-hidden">
             <img
               src={project.image}
               alt={project.title}
-              className="h-48 w-full object-cover transition-transform duration-200 hover:scale-105"
+              className="h-44 w-full object-cover"
             />
-          </figure>
-          <div className="card-body space-y-3">
-            <h2 className="card-title font-bold text-lg">{project.title}</h2>
-            <p className="text-sm leading-relaxed">{project.description}</p>
-            <div className="card-actions justify-end">
+          </div>
+
+          {/* Content */}
+          <div className="flex flex-col flex-1 p-5 space-y-3">
+            <h2 className="font-bold text-base text-[#F8FAFC]">{project.title}</h2>
+            <p className="text-sm leading-relaxed text-[#F8FAFC] flex-1">{project.description}</p>
+
+            {/* Links */}
+            <div className="flex items-center gap-4 pt-1">
               {project.source && (
-                <a href={project.source} target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-outline btn-sm text-[#4A5568] dark:text-[#A0AEC0] border-[#4A5568] hover:bg-[#4A5568] hover:text-white transition-colors duration-200">
-                    Source Code
-                  </button>
+                <a
+                  href={project.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-xs font-semibold tracking-wide text-[#6699CC] hover:text-[#F8FAFC] transition-colors duration-150"
+                >
+                  <FiGithub className="text-base" />
+                  Source Code
                 </a>
               )}
             </div>

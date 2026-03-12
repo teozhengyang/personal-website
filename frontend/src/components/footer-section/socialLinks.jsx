@@ -1,9 +1,9 @@
 import { HiMail } from 'react-icons/hi';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
-export default function SocialLinks() {
-  const iconClass = "h-8 w-8 text-[#4A5568]";
-  const linkClass = "md:hover:bg-[#6699CC]/10 p-3 rounded-full transition";
+export default function So5cialLinks() {
+  const iconClass = "h-5 w-5 text-[#4A5568]";
+  const linkClass = "md:hover:bg-[#6699CC]/10 p-3 rounded-full transition hover:scale-120 border-[#6699CC]/50 border-1";
 
   return (
     <nav className="mb-4">

@@ -1,9 +1,9 @@
-import mypicture from '../../assets/about-section/mypicture1.JPG';
+import mypicture from '../../assets/about-section/mypicture.JPG';
 
 export default function ProfileImage() {
   return (
     <div className="flex justify-center" data-aos="zoom-in">
-      <div className="w-72 h-72 rounded-full border-4 border-[#6699CC] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+      <div className="w-72 h-72 rounded-full border-4 border-[#6699CC]/50 overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
         <img
           src={mypicture}
           alt="Zheng Yang"

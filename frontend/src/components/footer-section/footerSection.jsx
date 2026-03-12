@@ -3,8 +3,15 @@ import RandomFact from './randomFact';
 
 export default function FooterSection() {
   return (
-    <footer className="footer footer-center bg-base-200 text-base-content p-10 rounded-xl mt-10 font-inter">
-      <div className="flex flex-col justify-center items-center gap-4 text-base">
+    <footer
+      className="text-base-content p-10 rounded-t-3xl mt-10 font-jetbrains bg-[#1D1F24]"
+    >
+      <div className="flex flex-col justify-center items-center gap-5 text-base max-w-xl mx-auto text-center">
+        <div
+          className="text-2xl font-bold text-[#6699CC]"
+        >
+          {"Let's Connect"}
+        </div>
         <SocialLinks />
         <RandomFact />
       </div>

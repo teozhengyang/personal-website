@@ -21,10 +21,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
-
 .font-jetbrains {
   font-family: 'JetBrains Mono', monospace;
 }
