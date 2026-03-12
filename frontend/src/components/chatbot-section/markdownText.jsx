@@ -63,10 +63,10 @@ export default function MarkdownText({ text }) {
   const parseInlineMarkdown = (text) => {
     // Define patterns for different markdown elements
     const patterns = [
-      { regex: /\*\*(.*?)\*\*/g, tag: 'strong', className: 'font-jetbrains text-[#2C5282] font-semibold' }, // **bold**
-      { regex: /(?<!\*)\*([^*]+)\*(?!\*)/g, tag: 'em', className: 'italic text-gray-700' }, // *italic* (but not **bold**)
-      { regex: /`(.*?)`/g, tag: 'code', className: 'bg-[#f0f4f8] text-[#2C5282] px-2 py-1 rounded text-sm font-mono border border-[#d0d7e0]' }, // `inline code`
-      { regex: /\[([^\]]+)\]\(([^)]+)\)/g, tag: 'a', className: 'text-blue-600 hover:underline' }, // [text](url)
+      { regex: /\*\*(.*?)\*\*/g, tag: 'strong', className: 'font-semibold text-[#F8FAFC]' }, // **bold**
+      { regex: /(?<!\*)\*([^*]+)\*(?!\*)/g, tag: 'em', className: 'italic text-[#A0AEC0]' }, // *italic* (but not **bold**)
+      { regex: /`(.*?)`/g, tag: 'code', className: 'bg-[#16181D] text-[#6699CC] px-1.5 py-0.5 rounded text-sm font-mono border border-[#6699CC]/30' }, // `inline code`
+      { regex: /\[([^\]]+)\]\(([^)]+)\)/g, tag: 'a', className: 'text-[#6699CC] hover:text-[#F8FAFC] underline transition-colors' }, // [text](url)
     ];
 
     // Find all matches for each pattern in the text
@@ -155,7 +155,7 @@ export default function MarkdownText({ text }) {
       const blockquote = line.match(/^>\s+(.+)/);
       if (blockquote) {
         return (
-          <div key={lineIndex} className="border-l-2 border-gray-300 pl-4 italic text-gray-600 bg-gray-50 py-1 rounded">
+          <div key={lineIndex} className="border-l-2 border-[#6699CC]/40 pl-3 italic text-[#A0AEC0] bg-[#16181D] py-1 rounded">
             {parseInlineMarkdown(blockquote[1])}
           </div>
         );
@@ -166,7 +166,7 @@ export default function MarkdownText({ text }) {
       if (listItem) {
         return (
           <div key={lineIndex} className="flex items-start space-x-2 ml-4">
-            <span className="text-gray-500 mt-0.5">•</span>
+            <span className="text-[#6699CC] mt-0.5">•</span>
             <span>{parseInlineMarkdown(listItem[1])}</span>
           </div>
         );
@@ -182,7 +182,7 @@ export default function MarkdownText({ text }) {
 
   // Render the final component
   return (
-    <div className="space-y-2 text-gray-800 leading-relaxed">
+    <div className="space-y-2 text-[#A0AEC0] leading-relaxed">
       {parts.map((part, partIndex) => {
         if (part.type === 'codeblock') {
           // Render code blocks with syntax highlighting styling
