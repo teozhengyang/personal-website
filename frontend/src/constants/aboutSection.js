@@ -1,6 +1,6 @@
 export const experiences = [
-  { company: "GovTech", role: "Software Engineer Intern", description: "Rewards system", time: "Jan 2026 - Jun 2026" },
-  { company: "Synapxe", role: "Full Stack Developer Intern", description: "Agentic chatbot, AI-powered speech analysis, Computer use agents, Legacy code upgrading & refactoring", time: "May 2025 - Dec 2025" },
+  { company: "GovTech", role: "Software Engineer Intern", description: "GovRewards/GovEntry", time: "Jan 2026 - Jun 2026" },
+  { company: "Synapxe", role: "Full Stack Developer Intern", description: "HealthHub AI agentic chatbot, AI-powered speech analysis, Legacy code refactoring", time: "May 2025 - Dec 2025" },
   { company: "HTX", role: "Software Engineer Intern", description: "AI-powered phishing detection system", time: "May 2024 - Aug 2024" },
 ];
 

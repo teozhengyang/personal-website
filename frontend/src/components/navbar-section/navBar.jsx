@@ -26,7 +26,7 @@ export default function NavBar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40"
           >
-            {['home', 'about', 'projects', 'blog'].map((item) => (
+            {['home', 'about', 'projects',].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item}`}
@@ -44,7 +44,7 @@ export default function NavBar() {
       {/* Horizontal menu for desktop */}
       <div className="flex-none hidden md:block">
         <ul className="menu menu-horizontal px-2 text-base space-x-1 touch-manipulation">
-          {['home', 'about', 'projects', 'blog'].map((item) => (
+          {['home', 'about', 'projects'].map((item) => (
             <li key={item}>
               <a
                 href={`#${item}`}

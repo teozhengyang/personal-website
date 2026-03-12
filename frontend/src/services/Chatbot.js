@@ -129,11 +129,6 @@ class ChatbotService {
       return this.getRandomResponse(staticBotResponses.contact);
     }
     
-    // Check for blog queries
-    if (message.includes('blog') || message.includes('article') || message.includes('post')) {
-      return this.getRandomResponse(staticBotResponses.blog);
-    }
-    
     // Default response
     return this.getRandomResponse(staticBotResponses.default);
   }
