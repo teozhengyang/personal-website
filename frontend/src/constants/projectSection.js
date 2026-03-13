@@ -1,17 +1,10 @@
-import helper from '../assets/project-section/helper.jpg';
-import games from '../assets/project-section/games.jpg';
+import workinprogress from '../assets/project-section/work-in-progress.jpg';
 
 export const projects_dict = [
   {
-    title: 'Programming Helper',
-    description: 'A catalog of programming resources and tools',
-    image: helper,
-    source: 'https://github.com/teozhengyang/programming-helper'
+    title: 'Under Construction',
+    description: 'Please check back later for more projects!',
+    image: workinprogress,
+    source: 'https://github.com/teozhengyang/'
   },
-  {
-    title: 'Games Catalog',
-    description: 'A catalog of games',
-    image: games,
-    source: 'https://github.com/teozhengyang/games'
-  }
 ];

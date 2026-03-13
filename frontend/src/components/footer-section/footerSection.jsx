@@ -8,7 +8,7 @@ export default function FooterSection() {
     >
       <div className="flex flex-col justify-center items-center gap-5 text-base max-w-xl mx-auto text-center">
         <div
-          className="text-2xl font-bold text-[#6699CC]"
+          className="text-xl font-bold text-[#6699CC]"
         >
           {"Let's Connect"}
         </div>

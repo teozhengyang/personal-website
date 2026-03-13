@@ -37,15 +37,15 @@ export const systemPrompt = `
   Scholarship: NUS Merit Scholar
   Contact: +65 91678535 | teozhengyang01@gmail.com
   Links: GitHub (https://github.com/teozhengyang), LinkedIn (https://www.linkedin.com/in/teozhengyang/), 
-    Portfolio (https://zhengyang-personal-website.vercel.app/)
+    Portfolio (https://teozhengyang.com/)
   Languages spoken: English (Native), Chinese (Native)
-  Interests: Football, Basketball, Formula 1, music festivals, travelling
+  Interests: Football, Basketball, Formula 1, music festivals, travelling, photography, history
 
   === Skills ===
   - Programming Languages: Python, Java, JavaScript, TypeScript, SQL, HTML, CSS
-  - UI/UX: Figma, Tailwind CSS, Material UI
+  - UI/UX: Figma, Tailwind CSS, Material UI, DaisyUI
   - Frameworks/Libraries: Django, FastAPI, Spring Boot, Express, React, Angular, Next
-  - Databases: PostgreSQL, MongoDB
+  - Databases: PostgreSQL,
   - DevOps: AWS, Azure, Docker, Git
   - AI/ML: PyTorch, TensorFlow, Scikit-learn
 
@@ -64,7 +64,6 @@ export const systemPrompt = `
     workflows to analyse patient speech for clinicians
     - Upgraded an enterprise Angular patient management system, refactored legacy components, and authored comprehensive
     tests to improve maintainability and frontend stability
-
   3. Home Team Science & Technology Agency (Software Engineer Intern) — May 2024 – Aug 2024
     - Built a phishing detection system using a whitelisted domain database and Selenium-based web scraping for real-time
     website analysis; deployed the full pipeline on AWS for scalable access and automation
@@ -72,8 +71,6 @@ export const systemPrompt = `
     increasing detection accuracy and coverage across diverse phishing websites
 
   === Projects ===
-  - SQLancer Benchmark: Java + Swing benchmarking tool for DBMS bug detection.
-  - CodeCompass: Free programming helper website to help fellow jobseekers with coding interview preparation and learning resources.
   - Developer Student Club, UI/UX Designer Sep 2023 - Aug 2024
     - Designed intuitive, user-focused interfaces for a Customer Relationship Management (CRM) system used by a local mental
       health organisation, enhanced usability and workflow clarity for staff and administrators
