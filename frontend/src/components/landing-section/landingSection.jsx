@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import { FiChevronDown } from 'react-icons/fi'
 import { useState, useEffect } from 'react'
 
-export default function HomeSection() {
+export default function LandingSection() {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {

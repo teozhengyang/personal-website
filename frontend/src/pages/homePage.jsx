@@ -1,5 +1,5 @@
 import NavBar from '../components/navbar-section/navBar';
-import HomeSection from '../components/home-section/homeSection';
+import LandingSection from '../components/landing-section/landingSection';
 import AboutSection from '../components/about-section/aboutSection';
 import ExperienceSection from '../components/experience-section/experienceSection';
 import ProjectSection from '../components/project-section/projectSection';
@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="bg-[#1A202C] text-[#F8FAFC]">
       <NavBar />
-      <HomeSection />
+      <LandingSection />
       <div className="max-w-[70%] mx-auto">
         <AboutSection />
         <ExperienceSection />
