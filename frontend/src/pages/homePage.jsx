@@ -6,10 +6,16 @@ import ProjectSection from '../components/project-section/projectSection';
 import FooterSection from '../components/footer-section/footerSection';
 
 export default function HomePage() {
+  const homeMenuItems = [
+    { label: 'About', type: 'anchor', target: '#about' },
+    { label: 'Experience', type: 'anchor', target: '#experience' },
+    { label: 'Projects', type: 'anchor', target: '#projects' },
+    { label: 'Blog', type: 'route', target: '/blog' },
+  ];
 
   return (
     <div className="bg-[#1A202C] text-[#F8FAFC]">
-      <NavBar />
+      <NavBar menuItems={homeMenuItems} />
       <LandingSection />
       <div className="max-w-[70%] mx-auto">
         <AboutSection />
