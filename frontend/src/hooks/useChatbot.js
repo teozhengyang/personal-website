@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { initialMessage, chatbotConfig } from '../constants/chatbotSection';
-import ChatbotService from '../services/Chatbot';
+import ChatbotService from '../services/chatbot';
 
 export default function useChatbot(isOpen = false) {
   const [messages, setMessages] = useState(initialMessage);
