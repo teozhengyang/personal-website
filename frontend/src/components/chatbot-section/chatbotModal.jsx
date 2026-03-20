@@ -1,9 +1,8 @@
-import ChatbotHeader from './chatbotHeader';
 import ChatbotMessages from './chatbotMessages';
 import ChatbotInput from './chatbotInput';
 import useChatbot from './hooks/useChatbot';
 
-export default function ChatbotModal({ isOpen, onClose }) {
+export default function ChatbotModal({ isOpen }) {
   const {
     messages,
     inputValue,
@@ -17,8 +16,8 @@ export default function ChatbotModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-20 right-4 z-50 w-80 max-w-[calc(100vw-2rem)] h-96 max-h-[calc(100vh-6rem)] bg-[#16181D] rounded-xl shadow-2xl border border-[#6699CC]/30 flex flex-col overflow-hidden animate-in slide-in-from-bottom-4 duration-300 md:bottom-24 md:right-6 md:w-80">
-      <ChatbotHeader onClose={onClose} />
+    <div className="fixed bottom-20 right-4 z-50 w-80 h-96 bg-[#16181D] rounded-2xl border border-[#6699CC]/30 
+                    flex flex-col overflow-hidden bottom-24 right-6">
       <ChatbotMessages messages={messages} isTyping={isTyping} messagesEndRef={messagesEndRef} />
       <ChatbotInput 
         inputValue={inputValue} 

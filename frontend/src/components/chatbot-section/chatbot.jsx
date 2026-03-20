@@ -12,7 +12,7 @@ export default function Chatbot() {
   return (
     <>
       <ChatbotButton onClick={toggleChatbot} isOpen={isOpen} />
-      <ChatbotModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <ChatbotModal isOpen={isOpen} />
     </>
   );
 }
