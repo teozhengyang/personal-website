@@ -1,4 +1,4 @@
-import { systemPrompt } from '../src/constants/chatbotSection.js';
+import { systemPrompt } from '../src/components/chatbot/constants/chatbotText.js';
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -7,10 +7,15 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, conversationHistory = [] } = req.body;
+    const parsedBody = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body ?? {});
+    const { message, conversationHistory = [] } = parsedBody;
     // Validate input
     if (!message || typeof message !== 'string') {
       return res.status(400).json({ error: 'Message is required and must be a string' });
+    }
+
+    if (!Array.isArray(conversationHistory)) {
+      return res.status(400).json({ error: 'conversationHistory must be an array' });
     }
 
     // Check for API key
@@ -23,7 +28,9 @@ export default async function handler(req, res) {
     // Prepare messages for the API call
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...conversationHistory,
+      ...conversationHistory
+        .filter((item) => item && (item.role === 'user' || item.role === 'assistant') && typeof item.content === 'string')
+        .slice(-10),
       { role: 'user', content: message }
     ];
 
@@ -63,7 +70,7 @@ export default async function handler(req, res) {
     }
 
     // Return the AI response
-    res.status(200).json({ 
+    return res.status(200).json({ 
       response: aiResponse,
       success: true 
     });
@@ -71,8 +78,9 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Chatbot API error:', error);
     console.error('Error stack:', error.stack);
-    res.status(500).json({ 
+    return res.status(500).json({ 
       error: 'Internal server error',
+      details: process.env.NODE_ENV !== 'production' ? error.message : undefined,
       fallback: true 
     });
   }
