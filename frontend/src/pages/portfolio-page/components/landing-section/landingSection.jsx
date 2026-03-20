@@ -1,4 +1,4 @@
-import home from '../../assets/home-section/hero.JPG';
+import home from './assets/hero.jpg';
 import { Typewriter } from 'react-simple-typewriter'
 import { FiChevronDown } from 'react-icons/fi'
 import { useState, useEffect } from 'react'

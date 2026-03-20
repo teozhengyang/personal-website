@@ -1,4 +1,4 @@
-import useRandomFact from '../../hooks/useRandomFact';
+import useRandomFact from './hooks/useRandomFact';
 
 export default function RandomFact() {
   const fact = useRandomFact();

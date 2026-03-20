@@ -1,4 +1,4 @@
-import { experiences } from '../../constants/aboutSection';
+import { experiences } from './assets/experienceSkillText';
 
 export default function ExperienceList() {
   return (

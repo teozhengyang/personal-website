@@ -1,9 +1,9 @@
-import NavBar from '../components/navbar-section/navBar';
-import LandingSection from '../components/landing-section/landingSection';
-import AboutSection from '../components/about-section/aboutSection';
-import ExperienceSection from '../components/experience-section/experienceSection';
-import ProjectSection from '../components/project-section/projectSection';
-import FooterSection from '../components/footer-section/footerSection';
+import NavBar from '../../components/navbar-section/navBar';
+import LandingSection from './components/landing-section/landingSection';
+import AboutSection from './components/about-section/aboutSection';
+import ExperienceSection from './components/experience-section/experienceSection';
+import ProjectSection from './components/project-section/projectSection';
+import FooterSection from './components/footer-section/footerSection';
 
 const homeNavItems = [
   { name: 'About', link: '#about' },
@@ -12,7 +12,7 @@ const homeNavItems = [
   { name: 'Blog', link: '/blog' }
 ];
 
-export default function HomePage() {
+export default function PortfolioPage() {
 
   return (
     <div className="bg-[#1A202C] text-[#F8FAFC]">

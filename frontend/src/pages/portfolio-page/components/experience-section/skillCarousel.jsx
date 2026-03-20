@@ -1,4 +1,4 @@
-import { skillCategories } from '../../constants/aboutSection';
+import { skillCategories } from './assets/experienceSkillText';
 
 export default function SkillCarousel() {
   return (

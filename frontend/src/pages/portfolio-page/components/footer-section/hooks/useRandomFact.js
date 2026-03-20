@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import RandomFactService from '../services/randomFact';
+import RandomFactService from '../service/randomFact';
 
 export default function useRandomFact() {
   const [fact, setFact] = useState('');

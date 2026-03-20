@@ -1,4 +1,4 @@
-import mypicture from '../../assets/about-section/mypicture.JPG';
+import mypicture from './assets/mypicture.jpg';
 
 export default function ProfileImage() {
   return (

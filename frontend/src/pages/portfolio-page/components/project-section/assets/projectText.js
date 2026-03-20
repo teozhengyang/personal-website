@@ -1,4 +1,4 @@
-import workinprogress from '../assets/project-section/work-in-progress.jpg';
+import workinprogress from './work-in-progress.jpg';
 
 export const projects_dict = [
   {
