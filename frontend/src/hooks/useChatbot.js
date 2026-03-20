@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { initialMessage, chatbotConfig } from '../constants/chatbotSection';
+import { initialMessage } from '../constants/chatbotSection';
 import ChatbotService from '../services/chatbot';
 
 export default function useChatbot(isOpen = false) {
@@ -43,48 +43,23 @@ export default function useChatbot(isOpen = false) {
     setInputValue('');
     setIsTyping(true);
 
-    try {
-      // Prepare conversation history using the service
-      const conversationHistory = ChatbotService.prepareConversationHistory(messages);
+    // prepare conversation history for context
+    const conversationHistory = ChatbotService.prepareConversationHistory(messages);
 
-      // Get chatbot response from service
-      const apiResult = await ChatbotService.getChatbotResponse(currentInput, conversationHistory);
-      
-      let botResponseText;
-      let delay = chatbotConfig.responseDelay;
-
-      if (apiResult.success) {
-        botResponseText = apiResult.response;
-        delay = 500; // Shorter delay for AI responses
-      } else {
-        // Use fallback response from service
-        botResponseText = ChatbotService.getFallbackResponse(currentInput);
-      }
-
-      setTimeout(() => {
-        const botResponse = {
-          id: messages.length + 2,
-          text: botResponseText,
-          sender: 'bot'
-        };
-        setMessages(prev => [...prev, botResponse]);
-        setIsTyping(false);
-      }, delay);
-      
-    } catch (error) {
-      console.error('Error getting bot response:', error);
-      
-      // Fallback to predefined responses on error
-      setTimeout(() => {
-        const botResponse = {
-          id: messages.length + 2,
-          text: ChatbotService.getFallbackResponse(currentInput),
-          sender: 'bot'
-        };
-        setMessages(prev => [...prev, botResponse]);
-        setIsTyping(false);
-      }, chatbotConfig.responseDelay);
-    }
+    // call API to get response
+    const response = await ChatbotService.getChatbotResponse(currentInput, conversationHistory); 
+    
+    // simulate typing delay before showing response
+    setTimeout(() => {
+      const botResponse = {
+        id: messages.length + 2,
+        text: response.text,
+        sender: 'bot'
+      };
+      setMessages(prev => [...prev, botResponse]);
+      setIsTyping(false);
+    }, 500);
+    
   };
 
   // handle submit
