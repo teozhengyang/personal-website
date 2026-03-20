@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import NavBar from '../components/navbar-section/navBar';
-import { BLOG_SECTIONS } from '../constants/blogSection';
+import NavBar from '../../components/navbar-section/navBar';
+import { BLOG_SECTIONS } from './assets/blogText';
 
-export default function BlogPage() {
+export default function BlogOverviewPage() {
   const blogNavItems = [
     { name: 'Home', link: '/' },
     ...BLOG_SECTIONS.map((section) => ({
