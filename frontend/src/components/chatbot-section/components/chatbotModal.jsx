@@ -1,6 +1,6 @@
 import ChatbotMessages from './chatbotMessages';
 import ChatbotInput from './chatbotInput';
-import useChatbot from './hooks/useChatbot';
+import useChatbot from '../hooks/useChatbot';
 
 export default function ChatbotModal({ isOpen }) {
   const {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ChatbotModal from './chatbotModal';
-import ChatbotButton from './chatbotButton';
+import ChatbotModal from './components/chatbotModal';
+import ChatbotButton from './components/chatbotButton';
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,28 +1,26 @@
-# Folder Structure
+## Project Structure
 
-## api
+```text
+frontend/
+├─ api/                    # Serverless API functions (chatbot)
+├─ src/
+│  ├─ components/
+│  │  ├─ chatbot-section/ 
+│  │  └─ navbar-section/
+│  ├─ pages/           
+│  │  ├─ portfolio-page/
+│  │  ├─ blog-page/
+│  │  └─ error-page/
+│  ├─ App.jsx              # Router
+│  └─ main.jsx             # App entry
+├─ vite.config.js          # Vite configuration
+└─ vercel.json             # Vercel configuration
+```
 
-- Handle chatbot requests
+## Components/Pages Sub-folders
 
-## src
-
-### src/assets
-
-- Images in different sections
-
-### src/components
-
-- Components of different sections
-
-### src/constants
-
-- Information in different sections
-
-### src/hooks & src/service
-
-- Hooks for chatbot (local) & random fact
-
-### src/App.jsx
-
-- Main app component
-
+- Assets: images and other static files.
+- Components: smaller reusable UI components.
+- Constants: data to be displayed.
+- Hooks: custom React hooks for reusable logic.
+- Services: API calls and other external interactions.

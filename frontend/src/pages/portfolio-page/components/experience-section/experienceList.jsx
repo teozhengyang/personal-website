@@ -1,4 +1,4 @@
-import { experiences } from './assets/experienceSkillText';
+import { experiences } from './constants/experienceSkillText';
 
 export default function ExperienceList() {
   return (

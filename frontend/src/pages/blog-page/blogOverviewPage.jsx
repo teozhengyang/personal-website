@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/navbar-section/navBar';
-import { BLOG_SECTIONS } from './assets/blogText';
+import { BLOG_SECTIONS } from './constants/blogText';
 
 export default function BlogOverviewPage() {
   const blogNavItems = [

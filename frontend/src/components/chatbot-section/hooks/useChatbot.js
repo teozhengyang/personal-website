@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { initialMessage } from '../assets/chatbotText';
+import { initialMessage } from '../constants/chatbotText';
 import ChatbotService from '../services/chatbot';
 
 export default function useChatbot(isOpen = false) {

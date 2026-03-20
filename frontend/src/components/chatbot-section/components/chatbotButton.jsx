@@ -1,5 +1,5 @@
 import { HiXMark } from 'react-icons/hi2';
-import myimage from './assets/ai.jpg';
+import myimage from '../assets/ai.jpg';
 
 export default function ChatbotButton({ onClick, isOpen }) {
   return (

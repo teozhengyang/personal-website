@@ -1,5 +1,5 @@
 import { FiGithub } from 'react-icons/fi';
-import { projects_dict } from './assets/projectText';
+import { projects_dict } from './constants/projectText';
 
 export default function ProjectCards() {
   return (

@@ -1,5 +1,5 @@
 import MarkdownText from "./markdownText";
-import myimage from './assets/ai.jpg';
+import myimage from '../assets/ai.jpg';
 
 export default function ChatbotMessages({ messages, isTyping, messagesEndRef }) {
   return (
