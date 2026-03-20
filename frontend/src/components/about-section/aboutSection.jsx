@@ -3,13 +3,7 @@ import 'aos/dist/aos.css';
 import AboutText from './aboutText';
 import ProfileImage from './profileImage';
 
-import useAOS from '../../hooks/useAOS';
-
 export default function AboutSection() {
-  useAOS({
-    duration: 800,
-    once: false,
-  });
 
   return (
     <div className="px-6 py-10 scroll-mt-16 font-jetbrains" id="about">

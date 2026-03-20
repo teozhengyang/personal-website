@@ -1,13 +1,8 @@
 import 'aos/dist/aos.css';
 import ExperienceList from './experienceList';
 import SkillCarousel from './skillCarousel';
-import useAOS from '../../hooks/useAOS';
 
 export default function ExperienceSection() {
-  useAOS({
-    duration: 800,
-    once: false,
-  });
 
   return (
     <div className="px-6 py-10 scroll-mt-16 font-jetbrains" id="experience">
