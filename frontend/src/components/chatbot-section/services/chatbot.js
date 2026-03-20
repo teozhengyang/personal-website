@@ -1,4 +1,4 @@
-import { systemPrompt } from '../constants/chatbotSection';
+import { systemPrompt } from '../assets/chatbotText';
 
 class ChatbotService {
  

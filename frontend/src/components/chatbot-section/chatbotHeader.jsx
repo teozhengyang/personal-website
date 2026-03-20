@@ -1,22 +1,20 @@
 import { HiSparkles, HiXMark } from 'react-icons/hi2';
-import { uiText } from '../../constants/chatbotSection';
+import myimage from './assets/ai.jpg';
 
 export default function ChatbotHeader({ onClose }) {
   return (
-    <div className="bg-[#1D1F24] border-b border-[#6699CC]/25 p-3 md:p-4 flex items-center justify-between">
-      <div className="flex items-center space-x-2 md:space-x-3">
+    <div className="bg-[#1D1F24] border-b border-[#6699CC]/40 p-4 flex items-center justify-between">
+      <div className="flex items-center space-x-3">
 
         {/* Logo */}
-        <div className="w-8 h-8 md:w-10 md:h-10 bg-[#6699CC]/15 rounded-full flex items-center justify-center border border-[#6699CC]/30">
-          <HiSparkles className="h-4 w-4 md:h-5 md:w-5 text-[#6699CC]" />
-        </div>
+          <img src={myimage} alt="AI Logo" className="h-8 rounded-full" />
         <div>
           {/* Chatbot name */}
-          <h3 className="font-bold text-sm md:text-base text-[#F8FAFC]">{uiText.assistantName}</h3>
+          <h3 className="font-bold text-sm text-[#F8FAFC]">Zheng Yang</h3>
           {/* Chatbot status */}
-          <div className="flex items-center space-x-1.5">
-            <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-            <p className="text-xs text-[#A0AEC0] font-medium">{uiText.onlineStatus}</p>
+          <div className="flex items-center space-x-2">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            <p className="text-xs text-[#A0AEC0] font-medium">Online</p>
           </div>
         </div>
       </div>

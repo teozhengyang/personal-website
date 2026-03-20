@@ -1,15 +1,3 @@
-export const chatbotConfig = {
-  responseDelay: 1000,
-  animationDuration: 300,
-  maxMessageLength: 500,
-  groq: {
-    apiUrl: 'https://api.groq.com/openai/v1/chat/completions',
-    model: 'llama-3.1-8b-instant', 
-    maxTokens: 500,
-    temperature: 0.7,
-  }
-};
-
 export const systemPrompt = `
   You are an AI assistant for the personal portfolio website of Zheng Yang, 
   a Computer Science undergraduate at the National University of Singapore (NUS) specialising in database systems and artificial intelligence.
@@ -86,42 +74,7 @@ export const systemPrompt = `
 export const initialMessage = [
   { 
     id: 1, 
-    text: "Hi! I'm your AI assistant. How can I help you learn about Zheng Yang today?", 
+    text: "Hi I'm Zheng Yang! How's your day?", 
     sender: 'bot' 
   }
 ];
-
-export const staticBotResponses = {
-  greeting: [
-    "Hello! Nice to meet you! Feel free to ask me about the website, projects, or anything else.",
-    "Hi there! Welcome to the website. What would you like to know?",
-    "Hey! Great to see you here. How can I assist you today?"
-  ],
-  projects: [
-    "You can check out the amazing projects in the Projects section! There are some really cool developments showcased there.",
-    "The Projects section has some fantastic work displayed. You should definitely take a look!",
-    "There are some impressive projects featured on this site. Head over to the Projects section to explore them."
-  ],
-  about: [
-    "You can learn more about the developer in the About section. There's information about skills, experience, and background!",
-    "The About section contains detailed information about the developer's background, skills, and professional experience.",
-    "Check out the About section to discover more about the developer's journey and expertise."
-  ],
-  contact: [
-    "You can find contact information and social links in the footer section of the website.",
-    "All the contact details and social media links are available in the footer area.",
-    "Look for the footer section to find various ways to get in touch."
-  ],
-  default: [
-    "That's interesting! Is there anything specific about this website or the projects you'd like to know more about?",
-    "I'd be happy to help! Feel free to ask about the projects, background, or anything else on the site.",
-    "Great question! What would you like to explore on this website?",
-    "I'm here to help! Ask me about the developer's work, projects, or anything else you're curious about."
-  ]
-};
-
-export const uiText = {
-  assistantName: "AI Assistant",
-  onlineStatus: "Online now",
-  inputPlaceholder: "Type your message...",
-};

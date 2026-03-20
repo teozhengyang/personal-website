@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 import PortfolioPage from './pages/portfolio-page/portfolioPage'
@@ -8,10 +8,12 @@ import BlogSectionPage from './pages/blog-page/blogSectionPage'
 import ErrorPage from './pages/error-page/errorPage'
 import Chatbot from './components/chatbot-section/chatbot'
 
-import useAOS from './hooks/useAOS'
+import { useEffect } from 'react'
 
 function App() {
-  useAOS()
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false});
+  }, [])
 
   return (
     <BrowserRouter>

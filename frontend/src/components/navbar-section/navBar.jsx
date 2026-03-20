@@ -1,4 +1,4 @@
-import logo from '../../assets/navbar-section/logo.png';
+import logo from './assets/logo.png';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Hamburger from "hamburger-react";
