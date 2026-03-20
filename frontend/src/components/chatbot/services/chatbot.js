@@ -82,7 +82,8 @@ class ChatbotService {
 
       // handle non-200 responses
       if (!response.ok) {
-        console.error('API error:', response.status, response.statusText);
+        const errorText = await response.text();
+        console.error('API error:', response.status, response.statusText, errorText);
         return { text: 'Something went wrong. Try again later.', isError: true };
       }
 
