@@ -9,7 +9,7 @@ export default function NavBar({ items }) {
   const isSamePage = (link) => link.startsWith('#');
 
   return (
-    <div className="navbar w-full bg-[#1D1F24] fixed top-0 left-0 right-0 z-50 text-[#6699CC] font-jetbrains">
+    <div className="navbar bg-[#1D1F24] fixed top-0 z-50 text-[#6699CC] font-jetbrains">
       {/* Logo */}
       <div className="flex-1 items-center space-x-3 ml-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />

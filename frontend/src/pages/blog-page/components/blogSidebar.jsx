@@ -24,7 +24,7 @@ export default function BlogSidebar({
         <button
           type="button"
           onClick={onToggleSidebar}
-          className="lg:hidden fixed top-20 left-4 z-50 inline-flex items-center justify-center rounded-lg border border-[#2D3748] bg-[#1D1F24] p-2 text-[#6699CC] hover:text-[#F8FAFC] transition-colors"
+          className="lg:hidden fixed top-20 right-4 z-50 inline-flex items-center justify-center rounded-lg border border-[#2D3748] bg-[#1D1F24] p-2 text-[#6699CC] hover:text-[#F8FAFC] transition-colors"
           aria-label="Open sidebar"
         >
           <FiSidebar className="w-5 h-5" />
