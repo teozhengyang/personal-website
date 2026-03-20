@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import HomePage from './pages/homePage'
 import BlogPage from './pages/blogPage'
 import BlogSectionPage from './pages/blogSectionPage'
-import ErrorPage from './pages/errorPage'
+import ErrorPage from './pages/error-page/errorPage'
 import Chatbot from './components/chatbot-section/chatbot'
 
 import useAOS from './hooks/useAOS'
