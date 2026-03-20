@@ -6,7 +6,7 @@ export default function ChatbotButton({ onClick, isOpen }) {
     <button
       onClick={onClick}
       className={`
-        fixed bottom-4 right-4 z-50 w-16 h-16 md:w-[4.25rem] md:h-[4.25rem]
+        fixed bottom-6 right-6 z-50 w-16 h-16 md:w-[4.25rem] md:h-[4.25rem]
         rounded-full bg-[#1D1F24] border border-[#6699CC]/40 
         text-[#6699CC] flex items-center justify-center
         hover:border-[#6699CC]/80 hover:text-[#F8FAFC] hover:scale-[1.03]
