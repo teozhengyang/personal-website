@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import 'aos/dist/aos.css'
-import './App.css'
 
 import HomePage from './pages/homePage'
 import BlogPage from './pages/blogPage'
