@@ -6,7 +6,7 @@ import PortfolioPage from './pages/portfolio-page/portfolioPage'
 import BlogOverviewPage from './pages/blog-page/blogOverviewPage'
 import BlogSectionPage from './pages/blog-page/blogSectionPage'
 import ErrorPage from './pages/error-page/errorPage'
-import Chatbot from './components/chatbot-section/chatbot'
+import Chatbot from './components/chatbot/chatbot'
 
 import { useEffect } from 'react'
 

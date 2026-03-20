@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import NavBar from '../../components/navbar-section/navBar';
+import NavBar from '../../components/navbar/navBar';
 import BlogSidebar from './components/blogSidebar';
 import { BLOG_SECTIONS, BLOG_SUBSECTIONS } from './constants/blogText';
 

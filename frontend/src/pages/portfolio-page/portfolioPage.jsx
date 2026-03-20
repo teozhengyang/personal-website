@@ -1,4 +1,4 @@
-import NavBar from '../../components/navbar-section/navBar';
+import NavBar from '../../components/navbar/navBar';
 import LandingSection from './components/landing-section/landingSection';
 import AboutSection from './components/about-section/aboutSection';
 import ExperienceSection from './components/experience-section/experienceSection';
