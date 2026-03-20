@@ -1,24 +1,25 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import AOS from 'aos';
 import 'aos/dist/aos.css'
-import './App.css'
 
-import HomePage from './pages/homePage'
-import BlogPage from './pages/blogPage'
-import BlogSectionPage from './pages/blogSectionPage'
-import ErrorPage from './pages/errorPage'
-import Chatbot from './components/chatbot-section/chatbot'
+import PortfolioPage from './pages/portfolio-page/portfolioPage'
+import BlogOverviewPage from './pages/blog-page/blogOverviewPage'
+import BlogSectionPage from './pages/blog-page/blogSectionPage'
+import ErrorPage from './pages/error-page/errorPage'
+import Chatbot from './components/chatbot/chatbot'
 
-import useAOS from './hooks/useAOS'
+import { useEffect } from 'react'
 
 function App() {
-  useAOS()
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false});
+  }, [])
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/" element={<PortfolioPage />} />
+        <Route path="/blog" element={<BlogOverviewPage />} />
         <Route path="/blog/:section" element={<BlogSectionPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     // Prepare messages for the API call
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...conversationHistory.slice(-6),
+      ...conversationHistory,
       { role: 'user', content: message }
     ];
 
