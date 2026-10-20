@@ -23,8 +23,8 @@ export default function AboutText() {
       {/* Bio */}
       <div className="border-l-2 border-[#6699CC]/40 pl-4 space-y-3">
         <p className="text-[#F8FAFC] leading-relaxed">
-          Computer Science undergraduate at National University of Singapore,
-          specialising in database systems and artificial intelligence.
+          Software Engineer at DBS Bank Wealth Management.
+          Computer Science graduate from National University of Singapore.
         </p>
       </div>
 

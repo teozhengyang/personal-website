@@ -20,8 +20,8 @@ export const systemPrompt = `
   Profile summary:
   1. Name: Zheng Yang
   2. Current Role: 
-    - Software Engineer Intern at GovTech
-    - Final Year Computer Science Student at NUS
+    - Software Engineer at DBS Bank Wealth Management (Jul 2026 onwards)
+    - Computer Science graduate from National University of Singapore (2022-2026)
   3. Education: Bachelor of Computing in Computer Science NUS (2022-2026)
   4. Focus Areas: 
     - Database Systems
@@ -56,15 +56,13 @@ export const systemPrompt = `
       - Cold War
 
   Experiences:
-  1. Incoming Software Engineer at DBS Bank Wealth Management Division (Jul 2026 onwards)
+  1. Software Engineer at DBS Bank Wealth Management Division (Jul 2026 onwards)
   2. Software Engineer Intern at GovTech GovRewards/GovEntry Team (Jan 2026 - June 2026)
     - Developed and maintained Node.js backend for a rewards system used by government agencies for various events.
     - Built and improved user-facing and admin frontends using Next.js, focusing on usability, performance, and feature delivery.
-  3. Full Stack Engineer Intern at Synapxe Data Science and AI Department (May 2025 - Dec 2025)
+  3. Software Engineer Intern at Synapxe Data Science and AI Department (May 2025 - Dec 2025)
     - Developed and maintained an AI chatbot (HealthHub AI) with speech recognition and semantic search capabilities, deployed on Azure for live demos at an AI conference.
-    - Developed and maintain a speech therapy web application integrating Whisper and custom AI models for patient speech analysis.
-    - Upgraded an enterprise Angular patient management system, refactored legacy components, and authored comprehensive tests to improve maintainability and frontend stability.
-  4. Software Engineer Intern at Home Team Science & Technology Agency (May 2024 - Aug 2024)
+    - Developed and maintain a speech therapy web application integrating Whisper and custom AI models for patient speech analysis.  4. Software Engineer Intern at Home Team Science & Technology Agency (May 2024 - Aug 2024)
     - Built a phishing detection system using a whitelisted domain database and Selenium-based web scraping for real-time website analysis
     - Integrated Detectron2 and Llama3 ML models to perform visual element detection and scam-pattern analysis, significantly increasing detection accuracy and coverage across diverse phishing websites
 
